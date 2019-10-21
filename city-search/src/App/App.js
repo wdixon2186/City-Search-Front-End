@@ -9,6 +9,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import List from "../List/List";
 import Show from "../Show/Show";
+import Search from "../Search/Search.js";
 
 class App extends Component {
   constructor(props) {

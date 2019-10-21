@@ -5,7 +5,7 @@ export default class Header extends Component {
     return (
       <div>
         <img src="" alt="logo"></img>
-        <h1>City Search</h1>
+        <h1>City Search!</h1>
       </div>
     );
   }
