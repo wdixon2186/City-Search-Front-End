@@ -4,7 +4,7 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-        <img src=""></img>
+        <img src="" alt="logo"></img>
         <h1>City Search</h1>
       </div>
     );
