@@ -1,0 +1,203 @@
+[{
+    "bestPlacesData": [{
+            "link": ""
+        },
+        {
+            "rank": null
+        },
+        {
+            "overall": null
+        },
+        {
+            "desirability": null
+        },
+        {
+            "value": null
+        },
+        {
+            "jobMarket": null
+        },
+        {
+            "qualityOfLife": null
+        },
+        {
+            "netMigration": null
+        }
+    ],
+    "general": [{
+            "stateShort": ""
+        },
+        {
+            "stateFull": ""
+        },
+        {
+            "city": ""
+        }
+    ],
+    "population": [{
+            "popEst2018": ""
+        },
+        {
+            "popChange": ""
+        },
+        {
+            "Pop2010": ""
+        }
+    ],
+    "ageAndGender": [{
+            "underFive": ""
+        },
+        {
+            "underEighteen": ""
+        },
+        {
+            "SixtyFiveAndOver": ""
+        },
+        {
+            "female": ""
+        }
+    ],
+    "raceAndOrigin": [{
+            "whiteAlone": ""
+        },
+        {
+            "blackAlone": ""
+        },
+        {
+            "nativeAlone": ""
+        },
+        {
+            "asianAlone": ""
+        },
+        {
+            "pacificIslanderAlone": ""
+        },
+        {
+            "twoPlusRaces": ""
+        },
+        {
+            "hispanicOrLatino": ""
+        },
+        {
+            "whiteAloneNoneHispanicOrLatino": ""
+        },
+        {
+            "foreignBorn": ""
+        }
+    ],
+    "veterans": "",
+    "housing": [{
+            "ownerOccupied": ""
+        },
+        {
+            "medianValueOwnerOccupied": ""
+        },
+        {
+            "medianMonthlyCostsWithMortgage": ""
+        },
+        {
+            "medianMonthlyCostsWithoutMortgage": ""
+        },
+        {
+            "medianRent": ""
+        }
+    ],
+    "households": [{
+            "households": ""
+        },
+        {
+            "personsPerHousehold": null
+        },
+        {
+            "sameHouseOneYearAgo": ""
+        },
+        {
+            "secondLanguageSpokenInHome": ""
+        },
+        {
+            "householdComputer": ""
+        },
+        {
+            "householdBroadband": ""
+        }
+    ],
+    "education": [{
+            "highSchoolGraduates": ""
+        },
+        {
+            "bachelorsDegreees": ""
+        }
+    ],
+    "employmentAndHealth": [{
+            "disability": ""
+        },
+        {
+            "withoutHealthInsurance": ""
+        },
+        {
+            "laborForce": ""
+        },
+        {
+            "femaleLaborForce": ""
+        },
+        {
+            "accomodationsAndFoodServSales": ""
+        },
+        {
+            "dailyCommuteInMinutes": null
+        },
+        {
+            "medianHouseholdIncome": ""
+        },
+        {
+            "incomePerCapita": ""
+        },
+        {
+            "poverty": ""
+        },
+        {
+            "healthCareAndSocialAssistanceRevenue": ""
+        }
+    ],
+    "business": [{
+            "shipments": ""
+        },
+        {
+            "wholesalerSales": ""
+        },
+        {
+            "retailSales": ""
+        },
+        {
+            "retailSalesPerCapita": ""
+        },
+        {
+            "firms": ""
+        },
+        {
+            "maleOwnedFirms": ""
+        },
+        {
+            "femaleOwnedFirms": ""
+        },
+        {
+            "minorityOwnedFirms": ""
+        },
+        {
+            "nonminorityOwnedFirms": ""
+        },
+        {
+            "veteranOwnedFirms": ""
+        },
+        {
+            "nonveteranOwnedFirms": ""
+        }
+    ],
+    "geography": [{
+            "popPerSqrMile": ""
+        },
+        {
+            "areaInSqrMiles": null
+        }
+    ]
+}]
