@@ -1,216 +1,203 @@
-[
-  {
-    "bestPlacesData": [
-      {
-        "link": ""
-      },
-      {
-        "rank": null
-      },
-      {
-        "overall": null
-      },
-      {
-        "desirability": null
-      },
-      {
-        "value": null
-      },
-      {
-        "jobMarket": null
-      },
-      {
-        "qualityOfLife": null
-      },
-      {
-        "netMigration": null
-      }
+[{
+    "bestPlacesData": [{
+            "link": ""
+        },
+        {
+            "rank": null
+        },
+        {
+            "overall": null
+        },
+        {
+            "desirability": null
+        },
+        {
+            "value": null
+        },
+        {
+            "jobMarket": null
+        },
+        {
+            "qualityOfLife": null
+        },
+        {
+            "netMigration": null
+        }
     ],
-    "general": [
-      {
-        "stateShort": ""
-      },
-      {
-        "stateFull": "Colorado"
-      },
-      {
-        "city": ""
-      }
+    "general": [{
+            "stateShort": ""
+        },
+        {
+            "stateFull": ""
+        },
+        {
+            "city": ""
+        }
     ],
-    "population": [
-      {
-        "popEst2018": ""
-      },
-      {
-        "popChange": ""
-      },
-      {
-        "Pop2010": ""
-      }
+    "population": [{
+            "popEst2018": ""
+        },
+        {
+            "popChange": ""
+        },
+        {
+            "Pop2010": ""
+        }
     ],
-    "ageAndGender": [
-      {
-        "underFive": ""
-      },
-      {
-        "underEighteen": ""
-      },
-      {
-        "SixtyFiveAndOver": ""
-      },
-      {
-        "female": ""
-      }
+    "ageAndGender": [{
+            "underFive": ""
+        },
+        {
+            "underEighteen": ""
+        },
+        {
+            "SixtyFiveAndOver": ""
+        },
+        {
+            "female": ""
+        }
     ],
-    "raceAndOrigin": [
-      {
-        "whiteAlone": ""
-      },
-      {
-        "blackAlone": ""
-      },
-      {
-        "nativeAlone": ""
-      },
-      {
-        "asianAlone": ""
-      },
-      {
-        "pacificIslanderAlone": ""
-      },
-      {
-        "twoPlusRaces": ""
-      },
-      {
-        "hispanicOrLatino": ""
-      },
-      {
-        "whiteAloneNoneHispanicOrLatino": ""
-      },
-      {
-        "foreignBorn": ""
-      }
+    "raceAndOrigin": [{
+            "whiteAlone": ""
+        },
+        {
+            "blackAlone": ""
+        },
+        {
+            "nativeAlone": ""
+        },
+        {
+            "asianAlone": ""
+        },
+        {
+            "pacificIslanderAlone": ""
+        },
+        {
+            "twoPlusRaces": ""
+        },
+        {
+            "hispanicOrLatino": ""
+        },
+        {
+            "whiteAloneNoneHispanicOrLatino": ""
+        },
+        {
+            "foreignBorn": ""
+        }
     ],
     "veterans": "",
-    "housing": [
-      {
-        "ownerOccupied": ""
-      },
-      {
-        "medianValueOwnerOccupied": ""
-      },
-      {
-        "medianMonthlyCostsWithMortgage": ""
-      },
-      {
-        "medianMonthlyCostsWithoutMortgage": ""
-      },
-      {
-        "medianRent": ""
-      }
+    "housing": [{
+            "ownerOccupied": ""
+        },
+        {
+            "medianValueOwnerOccupied": ""
+        },
+        {
+            "medianMonthlyCostsWithMortgage": ""
+        },
+        {
+            "medianMonthlyCostsWithoutMortgage": ""
+        },
+        {
+            "medianRent": ""
+        }
     ],
-    "households": [
-      {
-        "households": ""
-      },
-      {
-        "personsPerHousehold": null
-      },
-      {
-        "sameHouseOneYearAgo": ""
-      },
-      {
-        "secondLanguageSpokenInHome": ""
-      },
-      {
-        "householdComputer": ""
-      },
-      {
-        "householdBroadband": ""
-      }
+    "households": [{
+            "households": ""
+        },
+        {
+            "personsPerHousehold": null
+        },
+        {
+            "sameHouseOneYearAgo": ""
+        },
+        {
+            "secondLanguageSpokenInHome": ""
+        },
+        {
+            "householdComputer": ""
+        },
+        {
+            "householdBroadband": ""
+        }
     ],
-    "education": [
-      {
-        "highSchoolGraduates": ""
-      },
-      {
-        "bachelorsDegreees": ""
-      }
+    "education": [{
+            "highSchoolGraduates": ""
+        },
+        {
+            "bachelorsDegreees": ""
+        }
     ],
-    "employmentAndHealth": [
-      {
-        "disability": ""
-      },
-      {
-        "withoutHealthInsurance": ""
-      },
-      {
-        "laborForce": ""
-      },
-      {
-        "femaleLaborForce": ""
-      },
-      {
-        "accomodationsAndFoodServSales": ""
-      },
-      {
-        "dailyCommuteInMinutes": null
-      },
-      {
-        "medianHouseholdIncome": ""
-      },
-      {
-        "incomePerCapita": ""
-      },
-      {
-        "poverty": ""
-      },
-      {
-        "healthCareAndSocialAssistanceRevenue": ""
-      }
+    "employmentAndHealth": [{
+            "disability": ""
+        },
+        {
+            "withoutHealthInsurance": ""
+        },
+        {
+            "laborForce": ""
+        },
+        {
+            "femaleLaborForce": ""
+        },
+        {
+            "accomodationsAndFoodServSales": ""
+        },
+        {
+            "dailyCommuteInMinutes": null
+        },
+        {
+            "medianHouseholdIncome": ""
+        },
+        {
+            "incomePerCapita": ""
+        },
+        {
+            "poverty": ""
+        },
+        {
+            "healthCareAndSocialAssistanceRevenue": ""
+        }
     ],
-    "business": [
-      {
-        "shipments": ""
-      },
-      {
-        "wholesalerSales": ""
-      },
-      {
-        "retailSales": ""
-      },
-      {
-        "retailSalesPerCapita": ""
-      },
-      {
-        "firms": ""
-      },
-      {
-        "maleOwnedFirms": ""
-      },
-      {
-        "femaleOwnedFirms": ""
-      },
-      {
-        "minorityOwnedFirms": ""
-      },
-      {
-        "nonminorityOwnedFirms": ""
-      },
-      {
-        "veteranOwnedFirms": ""
-      },
-      {
-        "nonveteranOwnedFirms": ""
-      }
+    "business": [{
+            "shipments": ""
+        },
+        {
+            "wholesalerSales": ""
+        },
+        {
+            "retailSales": ""
+        },
+        {
+            "retailSalesPerCapita": ""
+        },
+        {
+            "firms": ""
+        },
+        {
+            "maleOwnedFirms": ""
+        },
+        {
+            "femaleOwnedFirms": ""
+        },
+        {
+            "minorityOwnedFirms": ""
+        },
+        {
+            "nonminorityOwnedFirms": ""
+        },
+        {
+            "veteranOwnedFirms": ""
+        },
+        {
+            "nonveteranOwnedFirms": ""
+        }
     ],
-    "geography": [
-      {
-        "popPerSqrMile": ""
-      },
-      {
-        "areaInSqrMiles": null
-      }
+    "geography": [{
+            "popPerSqrMile": ""
+        },
+        {
+            "areaInSqrMiles": null
+        }
     ]
-  }
-]
+}]

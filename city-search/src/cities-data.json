@@ -1,0 +1,355 @@
+[
+
+    {
+        "bestPlacesData": {
+            "link": "https://realestate.usnews.com/places/texas/austin",
+            "rank": 1,
+            "overall": 7.6,
+            "desirability": 9,
+            "value": 6.7,
+            "jobMarket": 7.4,
+            "qualityOfLife": 7.3,
+            "netMigration": 9
+        },
+        "general": {
+            "stateShort": "TX",
+            "stateFull": "Texas",
+            "city": "Austin"
+        },
+        "population": {
+            "popEst2018": "964,254",
+            "popChange": "20.2%",
+            "Pop2010": "790,390"
+        },
+        "ageAndGender": {
+            "underFive": "6.7%",
+            "underEighteen": "21.2%",
+            "SixtyFiveAndOver": "8.4%",
+            "female": "49.4%"
+        },
+        "raceAndOrigin": {
+            "whiteAlone": "75.0%",
+            "blackAlone": "7.6%",
+            "nativeAlone": "0.5%",
+            "asianAlone": "7.0%",
+            "pacificIslanderAlone": "0.1%",
+            "twoPlusRaces": "3.1%",
+            "hispanicOrLatino": "34.5%",
+            "whiteAloneNoneHispanicOrLatino": "48.6%",
+            "foreignBorn": "18.4%"
+        },
+        "veterans": "35,979",
+        "housing": {
+            "ownerOccupied": "45.3%",
+            "medianValueOwnerOccupied": "$285,900.00",
+            "medianMonthlyCostsWithMortgage": "$1,860.00",
+            "medianMonthlyCostsWithoutMortgage": "$722.00",
+            "medianRent": "$1,165.00"
+        },
+        "households": {
+            "NumberOfhouseholds": "361,257",
+            "personsPerHousehold": 2.48,
+            "sameHouseOneYearAgo": "78.4%",
+            "secondLanguageSpokenInHome": "32.4%",
+            "householdComputer": "92.7%",
+            "householdBroadband": "84.0%"
+        },
+        "education": {
+            "highSchoolGraduates": "88.5%",
+            "bachelorsDegreees": "49.0%"
+        },
+        "employmentAndHealth": {
+            "disability": "6.5%",
+            "withoutHealthInsurance": "16.5%",
+            "laborForce": "73.3%",
+            "femaleLaborForce": "66.7%",
+            "accomodationsAndFoodServSales": "3,474,670",
+            "dailyCommuteInMinutes": 24.1,
+            "medianHouseholdIncome": "$63,717.00",
+            "incomePerCapita": "$37,888.00",
+            "poverty": "15.4%",
+            "healthCareAndSocialAssistanceRevenue": "6,609,254"
+        },
+        "business": {
+            "shipments": "11,413,406",
+            "wholesalerSales": "55,701,978",
+            "retailSales": "14,738,182",
+            "retailSalesPerCapita": "$17,491.00",
+            "firms": "96,048",
+            "maleOwnedFirms": "51,518",
+            "femaleOwnedFirms": "34,253",
+            "minorityOwnedFirms": "28,888",
+            "nonminorityOwnedFirms": "62,905",
+            "veteranOwnedFirms": "7,314",
+            "nonveteranOwnedFirms": "84,168"
+        },
+        "geography": {
+            "popPerSqrMile": "2,653.2",
+            "areaInSqrMiles": 297.9
+        }
+    },
+    {
+        "bestPlacesData": {
+            "link": "https://realestate.usnews.com/places/colorado/denver",
+            "rank": 2,
+            "overall": 7.4,
+            "desirability": 8.8,
+            "value": 6.7,
+            "jobMarket": 7.9,
+            "qualityOfLife": 7,
+            "netMigration": 7.6
+        },
+        "general": {
+            "stateShort": "CO",
+            "stateFull": "Colorado",
+            "city": "Denver"
+        },
+        "population": {
+            "popEst2018": "716,492",
+            "popChange": "19.5%",
+            "Pop2010": "600,158"
+        },
+        "ageAndGender": {
+            "underFive": "6.4%",
+            "underEighteen": "20.4%",
+            "SixtyFiveAndOver": "11.2%",
+            "female": "50.0%"
+        },
+        "raceAndOrigin": {
+            "whiteAlone": "76.9%",
+            "blackAlone": "9.5%",
+            "nativeAlone": "1.0%",
+            "asianAlone": "3.6%",
+            "pacificIslanderAlone": "0.1%",
+            "twoPlusRaces": "3.4%",
+            "hispanicOrLatino": "30.5%",
+            "whiteAloneNoneHispanicOrLatino": "53.6%",
+            "foreignBorn": "15.8%"
+        },
+        "veterans": "29,712",
+        "housing": {
+            "ownerOccupied": "50.1%",
+            "medianValueOwnerOccupied": "$322,900.00",
+            "medianMonthlyCostsWithMortgage": "$1,647.00",
+            "medianMonthlyCostsWithoutMortgage": "$453.00",
+            "medianRent": "$1,131.00"
+        },
+        "households": {
+            "NumberOfhouseholds": "287,262",
+            "personsPerHousehold": 2.31,
+            "sameHouseOneYearAgo": "79.0%",
+            "secondLanguageSpokenInHome": "26.7%",
+            "householdComputer": "90.2%",
+            "householdBroadband": "81.1%"
+        },
+        "education": {
+            "highSchoolGraduates": "86.7%",
+            "bachelorsDegreees": "46.5%"
+        },
+        "employmentAndHealth": {
+            "disability": "6.5%",
+            "withoutHealthInsurance": "12.8%",
+            "laborForce": "71.0%",
+            "femaleLaborForce": "65.8%",
+            "accomodationsAndFoodServSales": "2,884,852",
+            "dailyCommuteInMinutes": 25.3,
+            "medianHouseholdIncome": "$60,098.00",
+            "incomePerCapita": "$38,991.00",
+            "poverty": "15.1%",
+            "healthCareAndSocialAssistanceRevenue": "7,316,892"
+        },
+        "business": {
+            "shipments": "5,343,892",
+            "wholesalerSales": "14,625,818",
+            "retailSales": "7,111,416",
+            "retailSalesPerCapita": "$11,212.00",
+            "firms": "79,097",
+            "maleOwnedFirms": "41,776",
+            "femaleOwnedFirms": "28,725",
+            "minorityOwnedFirms": "18,049",
+            "nonminorityOwnedFirms": "57,077",
+            "veteranOwnedFirms": "6,329",
+            "nonveteranOwnedFirms": "67,981"
+        },
+        "geography": {
+            "popPerSqrMile": "3,922.6",
+            "areaInSqrMiles": 153
+        }
+    },
+    {
+        "bestPlacesData": {
+            "link": "https://realestate.usnews.com/places/colorado/colorado-springs",
+            "rank": 3,
+            "overall": 7.4,
+            "desirability": 10,
+            "value": 6.6,
+            "jobMarket": 6.8,
+            "qualityOfLife": 7,
+            "netMigration": 7.2
+        },
+        "general": {
+            "stateShort": "CO",
+            "stateFull": "Colorado",
+            "city": "ColoradoSprings"
+        },
+        "population": {
+            "popEst2018": "472,688",
+            "popChange": "13.2%",
+            "Pop2010": "416,427"
+        },
+        "ageAndGender": {
+            "underFive": "6.7%",
+            "underEighteen": "23.8%",
+            "SixtyFiveAndOver": "12.7%",
+            "female": "50.1%"
+        },
+        "raceAndOrigin": {
+            "whiteAlone": "78.2%",
+            "blackAlone": "6.4%",
+            "nativeAlone": "0.7%",
+            "asianAlone": "2.9%",
+            "pacificIslanderAlone": "0.3%",
+            "twoPlusRaces": "5.6%",
+            "hispanicOrLatino": "17.6%",
+            "whiteAloneNoneHispanicOrLatino": "68.7%",
+            "foreignBorn": "7.5%"
+        },
+        "veterans": "51,636",
+        "housing": {
+            "ownerOccupied": "58.6%",
+            "medianValueOwnerOccupied": "$233,100.00",
+            "medianMonthlyCostsWithMortgage": "$1,473.00",
+            "medianMonthlyCostsWithoutMortgage": "$417.00",
+            "medianRent": "$1,013.00"
+        },
+        "households": {
+            "NumberOfhouseholds": "176,026",
+            "personsPerHousehold": 2.52,
+            "sameHouseOneYearAgo": "76.3%",
+            "secondLanguageSpokenInHome": "12.8%",
+            "householdComputer": "92.6%",
+            "householdBroadband": "87.0%"
+        },
+        "education": {
+            "highSchoolGraduates": "93.2%",
+            "bachelorsDegreees": "38.4%"
+        },
+        "employmentAndHealth": {
+            "disability": "9.6%",
+            "withoutHealthInsurance": "10.0%",
+            "laborForce": "64.2%",
+            "femaleLaborForce": "60.0%",
+            "accomodationsAndFoodServSales": "1,274,811",
+            "dailyCommuteInMinutes": 21.8,
+            "medianHouseholdIncome": "$58,158.00",
+            "incomePerCapita": "$31,333.00",
+            "poverty": "12.8%",
+            "healthCareAndSocialAssistanceRevenue": "2,893,212"
+        },
+        "business": {
+            "shipments": "2,236,795",
+            "wholesalerSales": "2,062,768",
+            "retailSales": "6,966,707",
+            "retailSalesPerCapita": "$16,133.00",
+            "firms": "39,424",
+            "maleOwnedFirms": "19,740",
+            "femaleOwnedFirms": "14,262",
+            "minorityOwnedFirms": "6,380",
+            "nonminorityOwnedFirms": "31,109",
+            "veteranOwnedFirms": "4,709",
+            "nonveteranOwnedFirms": "31,961"
+        },
+        "geography": {
+            "popPerSqrMile": "2,140.6",
+            "areaInSqrMiles": 194.54
+        }
+    },
+    {
+        "bestPlacesData": {
+            "link": "https://realestate.usnews.com/places/arkansas/fayetteville",
+            "rank": 4,
+            "overall": 7.3,
+            "desirability": 5.5,
+            "value": 8.2,
+            "jobMarket": 7,
+            "qualityOfLife": 7.5,
+            "netMigration": 8
+        },
+        "general": {
+            "stateShort": "AR",
+            "stateFull": "Arkansas",
+            "city": "Fayetteville"
+        },
+        "population": {
+            "popEst2018": "86,751",
+            "popChange": "17.9%",
+            "Pop2010": "73,580"
+        },
+        "ageAndGender": {
+            "underFive": "6.3%",
+            "underEighteen": "18.2%",
+            "SixtyFiveAndOver": "9.0%",
+            "female": "50.5%"
+        },
+        "raceAndOrigin": {
+            "whiteAlone": "80.7%",
+            "blackAlone": "6.9%",
+            "nativeAlone": "0.8%",
+            "asianAlone": "3.4%",
+            "pacificIslanderAlone": "0.0%",
+            "twoPlusRaces": "3.8%",
+            "hispanicOrLatino": "8.0%",
+            "whiteAloneNoneHispanicOrLatino": "77.5%",
+            "foreignBorn": "7.0%"
+        },
+        "veterans": "3,845",
+        "housing": {
+            "ownerOccupied": "38.3%",
+            "medianValueOwnerOccupied": "$193,000.00",
+            "medianMonthlyCostsWithMortgage": "$1,370.00",
+            "medianMonthlyCostsWithoutMortgage": "$404.00",
+            "medianRent": "$747.00"
+        },
+        "households": {
+            "NumberOfhouseholds": "33,683",
+            "personsPerHousehold": 2.23,
+            "sameHouseOneYearAgo": "68.0%",
+            "secondLanguageSpokenInHome": "9.3%",
+            "householdComputer": "93.8%",
+            "householdBroadband": "81.8%"
+        },
+        "education": {
+            "highSchoolGraduates": "92.7%",
+            "bachelorsDegreees": "48.1%"
+        },
+        "employmentAndHealth": {
+            "disability": "6.1%",
+            "withoutHealthInsurance": "10.8%",
+            "laborForce": "63.4%",
+            "femaleLaborForce": "58.7%",
+            "accomodationsAndFoodServSales": "270,364",
+            "dailyCommuteInMinutes": 19.5,
+            "medianHouseholdIncome": "$41,158.00",
+            "incomePerCapita": "$28,401.00",
+            "poverty": "24.3%",
+            "healthCareAndSocialAssistanceRevenue": "985,216"
+        },
+        "business": {
+            "shipments": "1,031,737",
+            "wholesalerSales": "372,688",
+            "retailSales": "1,766,754",
+            "retailSalesPerCapita": "$22,975.00",
+            "firms": "7,467",
+            "maleOwnedFirms": "3,577",
+            "femaleOwnedFirms": "2,501",
+            "minorityOwnedFirms": "661",
+            "nonminorityOwnedFirms": "6,202",
+            "veteranOwnedFirms": "575",
+            "nonveteranOwnedFirms": "5,970"
+        },
+        "geography": {
+            "popPerSqrMile": "1,366.4",
+            "areaInSqrMiles": 53.85
+        }
+    }
+]

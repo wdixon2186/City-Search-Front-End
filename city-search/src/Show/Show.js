@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Comment from "../Comment/Comment";
 
 export default class List extends Component {
   render() {
@@ -13,24 +14,7 @@ export default class List extends Component {
             <li>Pop 2010: 500,000</li>
             <li>Change: 100%</li>
           </ul>
-        </div>
-        <div>
-          <form className="Comments">
-            <label for="name">Name</label>
-            <input
-              className="name"
-              type="text"
-              placeholder="optional"
-              name="name"
-            />
-            <label for="comment">Comment:</label>
-            <textarea
-              className="comment"
-              type="text"
-              placeholder="Enter comment here"
-              name="comment"
-            />
-          </form>
+          <Comment />
         </div>
       </div>
     );

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 import Architecture from "../city-architecture.json";
+// import listOfCities from "../cities-data.json";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";

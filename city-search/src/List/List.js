@@ -1,32 +1,26 @@
 import React, { Component } from "react";
-import searchBar from "../Search/Search";
-import Data from "../city-architecture.json";
+import { Link } from "react-router-dom";
+import Search from "../Search/Search";
+import listOfCities from "../cities-data.json";
 
 export default class List extends Component {
-  constructor() {
-    super();
-    this.state = { Data };
-  }
-  // filterByName(e) {
-  //   this.setState({ filter: e.target.value.substr(0, 22) });
-  // }
   render() {
+    let list = listOfCities.map(city => {
+      return (
+        <div key={city.general.city}>
+          <p>
+            <h4>{city.general.stateFull}</h4>
+            <Link to={`/show/${city.general.city}`}>{city.general.city}</Link>
+          </p>
+        </div>
+      );
+    });
     return (
       <div>
         <div>
-          <form className="search">
-            <input
-              className="searchBar"
-              type="text"
-              placeholder="City or State"
-              name="search"
-              // value={this.state.filter}
-              // onChange={this.filterByName}
-            />
-          </form>
+          <Search />
         </div>
-        <h2>State</h2>
-        <h3>City</h3>
+        <div>{list}</div>
       </div>
     );
   }
