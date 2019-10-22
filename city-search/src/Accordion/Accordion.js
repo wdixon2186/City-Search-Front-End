@@ -3,21 +3,6 @@ import Accordion from "react-bootstrap/Accordion";
 import Card from "../Card/Card";
 
 export default class AccordionComponent extends Component {
-  let population = city[0].population;
-// console.log(population);
-
-// let general = population.map(info => {
-//   console.log(info);
-// });
-
-var result = Object.keys(population).map(function(key) {
-  return [String(key), population[key]];
-});
-}
-for (let i = 0; i < result.length; i++) {
-  let x = result[i];
-  return x;
-}
   render() {
     return (
       <div>
@@ -43,3 +28,18 @@ for (let i = 0; i < result.length; i++) {
   }
 }
 
+// let population = city[0].population;
+// // console.log(population);
+
+// // let general = population.map(info => {
+// //   console.log(info);
+// // });
+
+// var result = Object.keys(population).map(function(key) {
+//   return [String(key), population[key]];
+// });
+// }
+// for (let i = 0; i < result.length; i++) {
+//   let x = result[i];
+//   return x;
+// }

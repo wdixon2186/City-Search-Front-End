@@ -10,12 +10,17 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import List from "../List/List";
 import Show from "../Show/Show";
-import Search from "../Search/Search.js";
+import Card from "react-bootstrap/Card";
+// import Search from "../Search/Search.js";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { Architecture };
+    this.state = { city: "" };
+    this.setName = this.setName.bind(this);
+  }
+  setName(city) {
+    this.setState({ city: city });
   }
   render() {
     return (
@@ -23,7 +28,16 @@ class App extends Component {
         <Header />
         <Switch>
           <Route path="/" exact={true} component={List} />
-          <Route path="/show" component={Show} />
+          <Route
+            path="/show/:city"
+            render={routerProps => (
+              <Show
+                setName={this.setName}
+                match={routerProps.match}
+                city={this.setState.city}
+              />
+            )}
+          />
         </Switch>
         <Footer />
       </div>
