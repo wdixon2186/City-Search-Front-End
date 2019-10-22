@@ -4,6 +4,11 @@ import Search from "../Search/Search";
 import listOfCities from "../cities-data.json";
 
 export default class List extends Component {
+  // sort list by state alphabetically
+  // sort cities within state alphabetically
+  // sort cities into array by state
+  // print array for each state
+
   render() {
     let list = listOfCities.map(city => {
       return (
