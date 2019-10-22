@@ -12,10 +12,12 @@ export default class List extends Component {
   render() {
     let list = listOfCities.map(city => {
       return (
-        <div key={city.general.city}>
+        <div key={city.city}>
           <p>
-            <h4>{city.general.stateFull}</h4>
-            <Link to={`/show/${city.general.city}`}>{city.general.city}</Link>
+            {/* <h4>{city.state.stateFull}</h4> */}
+            <Link to={`/show/${city.city}`}>
+              {city.city}, {city.state.stateFull}
+            </Link>
           </p>
         </div>
       );

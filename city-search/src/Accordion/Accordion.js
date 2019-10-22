@@ -1,24 +1,18 @@
 import React, { Component } from "react";
 import Card from "react-bootstrap/Card";
 import Accordion from "react-bootstrap/Accordion";
-import listOfCities from "../cities-data.json";
 
-export default class AccordianComponent extends Component {
+export default class AccordionComponent extends Component {
   constructor() {
     super();
     this.state = {};
   }
   render() {
-    // const showCity = this.props.match.params.city;
-    // // console.log(`showcity is ${showCity}`);
-    // let city = listOfCities.filter(city => city.general.city === showCity);
-
     let population = this.props.city.population;
-    let general = this.props.city.general;
+    let state = this.props.city.state;
     let bestPlacesData = this.props.city.bestPlacesData;
     let ageAndGender = this.props.city.ageAndGender;
     let raceAndOrigin = this.props.city.raceAndOrigin;
-    let veterans = this.props.city.veterans;
     let housing = this.props.city.housing;
     let households = this.props.city.households;
     let education = this.props.city.education;
@@ -44,11 +38,11 @@ export default class AccordianComponent extends Component {
         </div>
       );
     });
-    let generalList = Object.keys(general).map(key => {
+    let stateList = Object.keys(state).map(key => {
       return (
         <div>
           <li>
-            {String(key)}: {general[key]}
+            {String(key)}: {state[key]}
           </li>
         </div>
       );
@@ -161,11 +155,11 @@ export default class AccordianComponent extends Component {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="2">
-              <h4 onClick={this.general1}>General</h4>
+              <h4 onClick={this.general1}>State</h4>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="2">
               <Card.Body>
-                <ul>{generalList}</ul>
+                <ul>{stateList}</ul>
               </Card.Body>
             </Accordion.Collapse>
           </Card>

@@ -1,6 +1,15 @@
 [
 
     {
+        "reviews": [{
+                "name": "Jody Foster",
+                "comment": "I really love Austin, Tejas!"
+            },
+            {
+                "name": "Jonah Hill",
+                "comment": "Austin is for hipsters!"
+            }
+        ],
         "bestPlacesData": {
             "link": "https://realestate.usnews.com/places/texas/austin",
             "rank": 1,
@@ -11,11 +20,11 @@
             "qualityOfLife": 7.3,
             "netMigration": 9
         },
-        "general": {
+        "state": {
             "stateShort": "TX",
-            "stateFull": "Texas",
-            "city": "Austin"
+            "stateFull": "Texas"
         },
+        "city": "Austin",
         "population": {
             "popEst2018": "964,254",
             "popChange": "20.2%",
@@ -89,6 +98,15 @@
         }
     },
     {
+        "reviews": [{
+                "name": "Jody Foster",
+                "comment": "I really love Austin, Tejas!"
+            },
+            {
+                "name": "Jonah Hill",
+                "comment": "Austin is for hipsters!"
+            }
+        ],
         "bestPlacesData": {
             "link": "https://realestate.usnews.com/places/colorado/denver",
             "rank": 2,
@@ -99,11 +117,11 @@
             "qualityOfLife": 7,
             "netMigration": 7.6
         },
-        "general": {
+        "state": {
             "stateShort": "CO",
-            "stateFull": "Colorado",
-            "city": "Denver"
+            "stateFull": "Colorado"
         },
+        "city": "Denver",
         "population": {
             "popEst2018": "716,492",
             "popChange": "19.5%",
@@ -177,6 +195,15 @@
         }
     },
     {
+        "reviews": [{
+                "name": "Jody Foster",
+                "comment": "I really love Austin, Tejas!"
+            },
+            {
+                "name": "Jonah Hill",
+                "comment": "Austin is for hipsters!"
+            }
+        ],
         "bestPlacesData": {
             "link": "https://realestate.usnews.com/places/colorado/colorado-springs",
             "rank": 3,
@@ -187,11 +214,11 @@
             "qualityOfLife": 7,
             "netMigration": 7.2
         },
-        "general": {
+        "state": {
             "stateShort": "CO",
-            "stateFull": "Colorado",
-            "city": "ColoradoSprings"
+            "stateFull": "Colorado"
         },
+        "city": "ColoradoSprings",
         "population": {
             "popEst2018": "472,688",
             "popChange": "13.2%",
@@ -265,6 +292,15 @@
         }
     },
     {
+        "reviews": [{
+                "name": "Jody Foster",
+                "comment": "I really love Austin, Tejas!"
+            },
+            {
+                "name": "Jonah Hill",
+                "comment": "Austin is for hipsters!"
+            }
+        ],
         "bestPlacesData": {
             "link": "https://realestate.usnews.com/places/arkansas/fayetteville",
             "rank": 4,
@@ -275,11 +311,11 @@
             "qualityOfLife": 7.5,
             "netMigration": 8
         },
-        "general": {
+        "state": {
             "stateShort": "AR",
-            "stateFull": "Arkansas",
-            "city": "Fayetteville"
+            "stateFull": "Arkansas"
         },
+        "city": "Fayetteville",
         "population": {
             "popEst2018": "86,751",
             "popChange": "17.9%",
