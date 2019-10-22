@@ -19,9 +19,11 @@ class App extends Component {
     this.state = { city: "" };
     this.setName = this.setName.bind(this);
   }
+
   setName(city) {
     this.setState({ city: city });
   }
+
   render() {
     return (
       <div>
@@ -32,8 +34,8 @@ class App extends Component {
             path="/show/:city"
             render={routerProps => (
               <Show
-                setName={this.setName}
                 match={routerProps.match}
+                setName={this.setName}
                 city={this.setState.city}
               />
             )}
