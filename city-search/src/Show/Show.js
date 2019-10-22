@@ -9,13 +9,44 @@ export default class List extends Component {
 
     let showCity = "Austin"; // this.props.match.params.city
     let city = listOfCities.filter(city => city.general.city === showCity);
-    let population = city[0].population;
-
+    // let population = city[0].population;
     console.log(city);
-    console.log(population);
 
-    // let population = city.populations
+    // function shallowIterator(target) {
+    //   for (const key in target) {
+    //     if (typeof target[key] === "object") {
+    //       for (const nestedKey in target[key]) {
+    //         console.log(target[key][nestedKey]);
+    //       }
+    //     } else {
+    //       console.log(target[key]);
+    //     }
+    //   }
+    // }
+    // shallowIterator(city);
 
+    function deepIterator(target) {
+      if (typeof target === "object") {
+        for (const key in target) {
+          deepIterator(target[key]);
+        }
+      } else {
+        console.log(target);
+      }
+    }
+    deepIterator(city);
+
+    function key(category) {
+      Object.entries(category).forEach(([key]) => console.log(`${key}`));
+    }
+    key(city[0]);
+
+    //   for (let categoryx in city[0]) {
+    // // text += bestPlacesData[x] + " ";
+    // Object.entries(category).forEach(([key, value]) =>
+    //   console.log(`${key}: ${value}`)
+    // );
+    //   }
     let populationDisplay = city.map(data => {
       return (
         <div>
