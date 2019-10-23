@@ -2,6 +2,18 @@ import React, { Component } from "react";
 import { Form, Button } from "react-bootstrap";
 
 class Edit extends Component {
+  // componentDidMount(e) {
+  //   axios
+  //     .get(`https://city-fyndr.herokuapp.com/${this.props.city.city}`)
+  //     .then(res => {
+  //       this.setState({
+  //         review: {
+  //           name: res.data.review.name,
+  //           comment: res.data.review.comment
+  //         }
+  //       });
+  //     });
+  // }
   render() {
     return (
       <div className="reviewForm">
