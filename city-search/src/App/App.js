@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
-import Architecture from "../city-architecture.json";
+// import Architecture from "../city-architecture.json";
 // import listOfCities from "../cities-data.json";
 
 import "./App.css";
@@ -10,7 +10,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import List from "../List/List";
 import Show from "../Show/Show";
-import Card from "react-bootstrap/Card";
+// import Card from "react-bootstrap/Card";
 // import Search from "../Search/Search.js";
 
 class App extends Component {

@@ -7,12 +7,13 @@ export default class List extends Component {
   render() {
     const showCity = this.props.match.params.city;
     let city = listOfCities.filter(city => city.city === showCity)[0];
-    console.log(showCity);
-    console.log(city);
+    // console.log(showCity);
+    // console.log(city);
     return (
       <div>
-        <h2>{city.city}</h2>
-        <h3>{city.state.stateFull}</h3>
+        <h2 className="cityName">
+          {city.city}, {city.state.stateShort}
+        </h2>
         <div>
           <Accordion city={city} />
           <Comment />

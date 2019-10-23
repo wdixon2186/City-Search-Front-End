@@ -24,110 +24,112 @@ export default class AccordionComponent extends Component {
       return (
         <div>
           <li>
-            {String(key)}: {population[key]}
+            <strong>{String(key)}:</strong> {population[key]}
           </li>
         </div>
       );
     });
+
     let bestPlacesDataList = Object.keys(bestPlacesData).map(key => {
       return (
         <div>
           <li>
-            {String(key)}: {bestPlacesData[key]}
+            <strong>{String(key)}:</strong> {bestPlacesData[key]}
           </li>
         </div>
       );
     });
+
     let stateList = Object.keys(state).map(key => {
       return (
         <div>
           <li>
-            {String(key)}: {state[key]}
+            <strong>{String(key)}:</strong> {state[key]}
           </li>
         </div>
       );
     });
+
     let ageAndGenderList = Object.keys(ageAndGender).map(key => {
       return (
         <div>
           <li>
-            {String(key)}: {ageAndGender[key]}
+            <strong>{String(key)}:</strong> {ageAndGender[key]}
           </li>
         </div>
       );
     });
+
     let raceAndOriginList = Object.keys(raceAndOrigin).map(key => {
       return (
         <div>
           <li>
-            {String(key)}: {raceAndOrigin[key]}
+            <strong>{String(key)}:</strong> {raceAndOrigin[key]}
           </li>
         </div>
       );
     });
-    // let veteransList = Object.keys(veterans).map(key => {
-    //   return (
-    //     <div>
-    //       <li>
-    //         {String(key)}: {veterans[key]}
-    //       </li>
-    //     </div>
-    //   );
-    // });
+
     let housingList = Object.keys(housing).map(key => {
       return (
         <div>
           <li>
-            {String(key)}: {housing[key]}
+            <strong>{String(key)}:</strong> {housing[key]}
           </li>
         </div>
       );
     });
+
     let householdsList = Object.keys(households).map(key => {
       return (
         <div>
           <li>
-            {String(key)}: {households[key]}
+            <strong>{String(key)}:</strong> {households[key]}
           </li>
         </div>
       );
     });
+
     let educationList = Object.keys(education).map(key => {
       return (
         <div>
           <li>
-            {String(key)}: {education[key]}
+            <strong>{String(key)}:</strong> {education[key]}
           </li>
         </div>
       );
     });
+
     let employmentAndHealthList = Object.keys(employmentAndHealth).map(key => {
       return (
         <div>
           <li>
-            {String(key)}: {employmentAndHealth[key]}
+            <strong>{String(key)}:</strong> {employmentAndHealth[key]}
           </li>
         </div>
       );
     });
+
     let businessList = Object.keys(business).map(key => {
       return (
         <div>
           <li>
-            {String(key)}: {business[key]}
+            <strong>{String(key)}:</strong> {business[key]}
           </li>
         </div>
       );
     });
+
     let geographyList = Object.keys(geography).map(key => {
       return (
         <div>
           <li>
-            {String(key)}: {geography[key]}
+            <strong>{String(key)}:</strong> {geography[key]}
           </li>
         </div>
       );
     });
+
     return (
       <div>
         <Accordion defaultActiveKey="0">
@@ -190,7 +192,9 @@ export default class AccordionComponent extends Component {
             <Accordion.Collapse eventKey="5">
               <Card.Body>
                 <ul>
-                  <li>Veterans: {this.props.city.veterans}</li>
+                  <li>
+                    <strong>Veterans:</strong> {this.props.city.veterans}
+                  </li>
                 </ul>
               </Card.Body>
             </Accordion.Collapse>

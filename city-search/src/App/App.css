@@ -5,3 +5,16 @@ body {
 .logo {
   max-width: 35%;
 }
+
+.cityName {
+  margin: 20px 0;
+  font-weight: 900;
+}
+
+.reviewForm {
+  margin: 20px;
+}
+
+.nameForm {
+  text-align: right;
+}

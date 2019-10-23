@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Form from "react-bootstrap/Form";
+import { Form, Row, Col } from "react-bootstrap";
 
 export default class List extends Component {
   constructor() {
@@ -14,7 +14,7 @@ export default class List extends Component {
 
   render() {
     return (
-      <div>
+      <div className="reviewForm">
         <Form>
           <Form.Group md="4">
             <Form.Label>Name</Form.Label>
@@ -25,10 +25,8 @@ export default class List extends Component {
               onChange="onChange"
             />
           </Form.Group>
-          <Form.Group  md="4">
-            <Form.Group  md="4">
-              <Form.Label for="comment">Comment</Form.Label>
-            </Form.Group>
+          <Form.Group md="4">
+            <Form.Label for="comment">Comment</Form.Label>
             <Form.Control
               as="textarea"
               rpws="4"
