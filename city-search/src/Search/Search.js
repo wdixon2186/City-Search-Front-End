@@ -1,27 +1,31 @@
 import React, { Component } from "react";
-import Data from "../city-architecture.json";
+import { Form, Button } from "react-bootstrap";
 
 class Search extends Component {
-  constructor() {
-    super();
-    this.state = { Data };
-  }
-  filterByName(e) {
-    this.setState({ filter: e.target.value.substr(0, 22) });
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state.filter = {
+  //     filter: ""
+  //   };
+  // }
+
   render() {
     return (
       <div>
-        <form className="search">
-          <input
-            className="searchBar"
-            type="text"
-            placeholder="City or State"
-            name="search"
-            value={this.state.filter}
-            onChange={this.filterByName}
-          />
-        </form>
+        <Form>
+          <Form.Group md="4">
+            <Form.Control
+              type="text"
+              placeholder="Filter by City Name"
+              name="search"
+              value={this.props.value}
+              onChange={this.props.filter}
+            />
+          </Form.Group>
+          {/* <Form.Group md="4">
+            <Button type="submit">Search</Button>
+          </Form.Group> */}
+        </Form>
       </div>
     );
   }
