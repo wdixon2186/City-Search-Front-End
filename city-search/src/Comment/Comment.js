@@ -1,28 +1,54 @@
 import React, { Component } from "react";
 import { Form, Button } from "react-bootstrap";
+import axios from "axios";
 
 export default class List extends Component {
-  constructor() {
-    super();
-    this.state = { review: { name: "", comment: "" } };
-    this.onChange = this.onChange.bind(this);
+  constructor(props) {
+    super(props);
+    this.state = { name: "", comment: "" };
+    this.onChangeName = this.onChangeName.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.onChangeComment = this.onChangeComment.bind(this);
   }
 
-  onChange(e) {
-    this.setState({ review: { name: e.target.value } });
+  onChangeName(e) {
+    this.setState({ name: e.target.value });
+    console.log(this.state.name);
+  }
+  onChangeComment(e) {
+    this.setState({ comment: e.target.value });
+    console.log(this.state.comment);
+  }
+  handleSubmit(e) {
+    e.preventDefault();
+    let review = {
+      reviews: {
+        name: this.state.name,
+        comment: this.state.comment
+      }
+    };
+    console.log(review);
+    axios
+      .put(`https://city-fyndr.herokuapp.com/${this.props.city.city}`, review)
+      .then(res => {
+        console.log(res.data);
+      });
+    // this.setState({ name: "", comment: "" });
   }
 
   render() {
     return (
       <div className="reviewForm">
-        <Form>
+        <Form onSubmit={this.handleSubmit}>
           <Form.Group md="4">
             <Form.Label>Name</Form.Label>
             <Form.Control
               type="text"
+              action="/:city"
+              method="put"
               placeholder="optional"
               name="name"
-              onChange="onChange"
+              onChange={this.onChangeName}
             />
           </Form.Group>
           <Form.Group md="4">
@@ -32,7 +58,7 @@ export default class List extends Component {
               rpws="4"
               placeholder="Enter comment"
               name="comment"
-              onChange="onChange"
+              onChange={this.onChangeComment}
             />
           </Form.Group>
           <Button type="submit">Submit</Button>

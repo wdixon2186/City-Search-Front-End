@@ -293,11 +293,12 @@ export default class AccordionComponent extends Component {
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="13">
               <Card.Body>
-                <Comment />
+                <Comment city={this.props.city}/>
               </Card.Body>
             </Accordion.Collapse>
           </Card>
         </Accordion>
+        
       </div>
     );
   }
