@@ -1,16 +1,27 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Search from "../Search/Search";
-import ListOfCities from "../cities-data.json";
+import axios from "axios";
 
 export default class List extends Component {
   constructor() {
     super();
     this.state = {
-      ListOfCities: ListOfCities,
+      ListOfCities: [],
       filter: ""
     };
     this.filterByCityState = this.filterByCityState.bind(this);
+  }
+  componentDidMount() {
+    axios
+      .get("https://city-fyndr.herokuapp.com/")
+      .then(res => {
+        console.log(res);
+        this.setState({ ListOfCities: res.data });
+      })
+      .catch(err => {
+        console.error(err);
+      });
   }
 
   filterByCityState(e) {
@@ -29,11 +40,11 @@ export default class List extends Component {
 
     let list = filtered.map(city => {
       return (
-        <div key={city.city}>
+        <div key={city.bestPlacesData.rank}>
           <p>
             {/* <h4>{city.state.stateFull}</h4> */}
             <Link to={`/show/${city.city}`}>
-              {city.city}, {city.state.stateFull}
+              {city.bestPlacesData.rank}. {city.city}, {city.state.stateFull}
             </Link>
           </p>
         </div>

@@ -18,7 +18,7 @@ import Edit from "../Edit/Edit";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { city: "" };
+    this.state = { city: null };
     this.setName = this.setName.bind(this);
   }
 
@@ -41,6 +41,7 @@ class App extends Component {
                 match={routerProps.match}
                 setName={this.setName}
                 city={this.setState.city}
+                cityName={this.state.city}
               />
             )}
           />
