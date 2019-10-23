@@ -10,6 +10,8 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import List from "../List/List";
 import Show from "../Show/Show";
+import About from "../About/About";
+import Edit from "../Edit/Edit";
 // import Card from "react-bootstrap/Card";
 // import Search from "../Search/Search.js";
 
@@ -30,6 +32,8 @@ class App extends Component {
         <Header />
         <Switch>
           <Route path="/" exact={true} component={List} />
+          <Route path="/about" component={About} />
+          <Route path="/city/:city/review/:reviews_id" component={Edit} />
           <Route
             path="/show/:city"
             render={routerProps => (

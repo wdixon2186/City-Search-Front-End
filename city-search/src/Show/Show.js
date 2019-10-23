@@ -16,7 +16,6 @@ export default class List extends Component {
         </h2>
         <div>
           <Accordion city={city} />
-          <Comment />
         </div>
       </div>
     );

@@ -1,17 +1,7 @@
 import React, { Component } from "react";
 import { Form, Button } from "react-bootstrap";
 
-export default class List extends Component {
-  constructor() {
-    super();
-    this.state = { review: { name: "", comment: "" } };
-    this.onChange = this.onChange.bind(this);
-  }
-
-  onChange(e) {
-    this.setState({ review: { name: e.target.value } });
-  }
-
+class Edit extends Component {
   render() {
     return (
       <div className="reviewForm">
@@ -41,3 +31,5 @@ export default class List extends Component {
     );
   }
 }
+
+export default Edit;

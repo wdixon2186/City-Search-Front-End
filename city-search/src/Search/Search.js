@@ -11,7 +11,7 @@ class Search extends Component {
 
   render() {
     return (
-      <div>
+      <div className="searchBar">
         <Form>
           <Form.Group md="4">
             <Form.Control

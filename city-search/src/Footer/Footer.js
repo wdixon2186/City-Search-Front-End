@@ -1,11 +1,17 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Footer extends Component {
   render() {
     return (
-      <div>
-        <h4>About</h4>
-        <h4>Made By: J M B W</h4>
+      <div className="footer">
+        <Link to="/about">
+          <h3>About</h3>
+        </Link>
+        <p>
+          Made By: Jared Morgan, Melaina Valentine, Bonnie Peters, and William
+          Dixon
+        </p>
       </div>
     );
   }

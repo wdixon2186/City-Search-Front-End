@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Card from "react-bootstrap/Card";
 import Accordion from "react-bootstrap/Accordion";
+import { Link } from "react-router-dom";
+import Comment from "../Comment/Comment";
 
 export default class AccordionComponent extends Component {
   constructor() {
@@ -19,6 +21,23 @@ export default class AccordionComponent extends Component {
     let employmentAndHealth = this.props.city.employmentAndHealth;
     let business = this.props.city.business;
     let geography = this.props.city.geography;
+    let reviews = this.props.city.reviews;
+
+    let commentsList = reviews.map(object => {
+      return (
+        <div className="comments">
+          <div>
+            <strong>name:</strong> {object.name}
+            <Link className="commentEdit" to="/city/:city/review/:reviews_id">
+              edit
+            </Link>
+          </div>
+          <div>
+            <strong>comment:</strong> {object.comment}
+          </div>
+        </div>
+      );
+    });
 
     let populationList = Object.keys(population).map(key => {
       return (
@@ -129,6 +148,7 @@ export default class AccordionComponent extends Component {
         </div>
       );
     });
+    console.log(commentsList);
 
     return (
       <div>
@@ -256,6 +276,24 @@ export default class AccordionComponent extends Component {
             <Accordion.Collapse eventKey="11">
               <Card.Body>
                 <ul>{geographyList}</ul>
+              </Card.Body>
+            </Accordion.Collapse>
+          </Card>
+          <Card>
+            <Accordion.Toggle as={Card.Header} eventKey="12">
+              <h4 onClick={this.population1}>Comments</h4>
+            </Accordion.Toggle>
+            <Accordion.Collapse eventKey="12">
+              <Card.Body>{commentsList}</Card.Body>
+            </Accordion.Collapse>
+          </Card>
+          <Card>
+            <Accordion.Toggle as={Card.Header} eventKey="13">
+              <h4 onClick={this.population1}>Leave A Review</h4>
+            </Accordion.Toggle>
+            <Accordion.Collapse eventKey="13">
+              <Card.Body>
+                <Comment />
               </Card.Body>
             </Accordion.Collapse>
           </Card>

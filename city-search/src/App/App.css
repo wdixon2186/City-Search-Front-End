@@ -11,10 +11,31 @@ body {
   font-weight: 900;
 }
 
-.reviewForm {
+.reviewForm,
+.searchBar {
   margin: 20px;
 }
 
 .nameForm {
   text-align: right;
+}
+h3,
+h4 {
+  display: inline-block;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.comments {
+  padding: 2%;
+}
+.commentEdit {
+  float: right;
+}
+.reviewForm {
+  background-color: lightgray;
+  padding: 2%;
+  border-radius: 5px;
 }
