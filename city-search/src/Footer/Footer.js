@@ -9,8 +9,22 @@ export default class Footer extends Component {
           <h3>About</h3>
         </Link>
         <p>
-          Made By: Jared Morgan, Melaina Valentine, Bonnie Peters, and William
-          Dixon
+          Made by{" "}
+          <a href="https://github.com/bonniepeters" target="_blank">
+            Bonnie Peters
+          </a>
+          ,{" "}
+          <a href="https://github.com/jaredsmorgan" target="_blank">
+            Jared Morgan
+          </a>
+          ,{" "}
+          <a href="https://github.com/Emme313" target="_blank">
+            Melaina Valentine
+          </a>
+          ,{" "}
+          <a href="https://github.com/wdixon2186" target="_blank">
+            William Dixon
+          </a>
         </p>
       </div>
     );
