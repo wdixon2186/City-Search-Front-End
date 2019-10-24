@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Form } from "react-bootstrap";
-// imported in List.js
 
+// imported in List.js
 class Search extends Component {
   render() {
     return (

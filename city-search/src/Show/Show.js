@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Accordion from "../Accordion/Accordion";
 import axios from "axios";
-// imported in App.js
 
+// imported in App.js
 export default class List extends Component {
   componentDidMount() {
     const showCity = this.props.match.params.city;

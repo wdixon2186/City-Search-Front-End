@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Search from "../Search/Search";
 import axios from "axios";
-// imported in App.js
 
+// imported in App.js
 export default class List extends Component {
   constructor() {
     super();
