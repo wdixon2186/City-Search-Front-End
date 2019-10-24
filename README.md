@@ -31,7 +31,7 @@ Otherwise the user can clone down this repository, making sure they have the rea
 
 # THOUGHT PROCESS
 
--On React
+## On React
 
   We approached React with a divide and conquer mentality.
   The entire project began with the front end and back end sitting down and creating wire-frames for what we wanted the site to look like, and what functionality it would have.
@@ -43,7 +43,7 @@ Otherwise the user can clone down this repository, making sure they have the rea
 
   Once the backend was deployed, we installed axios to access it, and removed our sample data.
 
--On Express
+## On Express
   ![Model](https://i.imgur.com/5gGHaA9.jpg)
 
 # UNRESOLVED PROBLEMS
@@ -70,5 +70,4 @@ If given more time, we would set up the reviews function on our city pages to po
 # ACKNOWLEDGMENTS
 
 - Ali Spittel
-
 
