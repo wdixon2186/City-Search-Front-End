@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, Accordion, useAccordionToggle } from "react-bootstrap";
+import { Card, Accordion } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Comment from "../Comment/Comment";
 import CardComponent from "../Card/Card";
@@ -11,7 +11,6 @@ export default class AccordionComponent extends Component {
       bestPlacesData,
       ageAndGender,
       raceAndOrigin,
-      veterans,
       housing,
       households,
       education,
@@ -20,30 +19,6 @@ export default class AccordionComponent extends Component {
       geography,
       reviews
     } = this.props.city;
-
-    // let bestPlacesDataList = Object.keys(bestPlacesData).map(key => {
-    //   let httpCheck = key.includes("https://");
-    //   if (httpCheck === true) {
-    //     return (
-    //       <div>
-    //         <li>
-    //           <strong>{String(key)}:</strong>{" "}
-    //           <a href={bestPlacesData[key]} target="_blank">
-    //             {bestPlacesData[key]}
-    //           </a>
-    //         </li>
-    //       </div>
-    //     );
-    //   } else {
-    //     return (
-    //       <div>
-    //         <li>
-    //           <strong>{String(key)}:</strong> {bestPlacesData[key]}
-    //         </li>
-    //       </div>
-    //     );
-    //   }
-    // });
 
     // comments list based on available data
     let commentsList;
