@@ -65,9 +65,10 @@ If given more time, we would set up the reviews function on our city pages to po
 
 - [Melaina Valentine](https://github.com/Emme313)
 
-- William Dixon
+- [William Dixon](https://github.com/wdixon2186)
 
 # ACKNOWLEDGMENTS
 
 - Ali Spittel
+
 
