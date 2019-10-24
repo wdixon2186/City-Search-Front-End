@@ -32,6 +32,7 @@ Otherwise the user can clone down this repository, making sure they have the rea
 # THOUGHT PROCESS
 
 -On React
+
   We approached React with a divide and conquer mentality.
   The entire project began with the front end and back end sitting down and creating wire-frames for what we wanted the site to look like, and what functionality it would have.
   ![WireFrame](https://i.imgur.com/oSHGX0A.jpg)
