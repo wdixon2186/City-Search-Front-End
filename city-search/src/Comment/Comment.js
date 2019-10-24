@@ -6,7 +6,7 @@ import axios from "axios";
 export default class List extends Component {
   constructor(props) {
     super(props);
-    this.state = { name: "", comment: "", redirect: false };
+    this.state = { name: "anonymous", comment: "", redirect: false };
     this.onChangeName = this.onChangeName.bind(this);
     this.onChangeComment = this.onChangeComment.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
