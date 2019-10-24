@@ -5,11 +5,7 @@ import { Link } from "react-router-dom";
 import Comment from "../Comment/Comment";
 
 export default class AccordionComponent extends Component {
-  constructor() {
-    super();
-    this.state = {};
-  }
-  render() {
+    render() {
     let population = this.props.city.population;
     let state = this.props.city.state;
     let bestPlacesData = this.props.city.bestPlacesData;
@@ -157,7 +153,7 @@ export default class AccordionComponent extends Component {
         <Accordion defaultActiveKey="0">
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="0">
-              <h4 onClick={this.population1}>Population</h4>
+              <h4>Population</h4>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
               <Card.Body>
@@ -169,7 +165,7 @@ export default class AccordionComponent extends Component {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="1">
-              <h4 onClick={this.bestPlacesData1}>Best Places Data</h4>
+              <h4>Best Places Data</h4>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
               <Card.Body>
@@ -179,7 +175,7 @@ export default class AccordionComponent extends Component {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="2">
-              <h4 onClick={this.general1}>State</h4>
+              <h4>State</h4>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="2">
               <Card.Body>
@@ -189,7 +185,7 @@ export default class AccordionComponent extends Component {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="3">
-              <h4 onClick={this.ageAndGender1}>Age and Gender</h4>
+              <h4>Age and Gender</h4>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="3">
               <Card.Body>
@@ -199,7 +195,7 @@ export default class AccordionComponent extends Component {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="4">
-              <h4 onClick={this.raceAndOrigin1}>Race and Origin</h4>
+              <h4>Race and Origin</h4>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="4">
               <Card.Body>
@@ -209,7 +205,7 @@ export default class AccordionComponent extends Component {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="5">
-              <h4 onClick={this.veterans1}>Veterans</h4>
+              <h4>Veterans</h4>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="5">
               <Card.Body>
@@ -223,7 +219,7 @@ export default class AccordionComponent extends Component {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="6">
-              <h4 onClick={this.housing1}>Housing</h4>
+              <h4>Housing</h4>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="6">
               <Card.Body>
@@ -233,7 +229,7 @@ export default class AccordionComponent extends Component {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="7">
-              <h4 onClick={this.households1}>Households</h4>
+              <h4>Households</h4>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="7">
               <Card.Body>
@@ -243,7 +239,7 @@ export default class AccordionComponent extends Component {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="8">
-              <h4 onClick={this.education1}>Education</h4>
+              <h4>Education</h4>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="8">
               <Card.Body>
@@ -253,7 +249,7 @@ export default class AccordionComponent extends Component {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="9">
-              <h4 onClick={this.employmentAndHealth1}>Employment And Health</h4>
+              <h4>Employment And Health</h4>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="9">
               <Card.Body>
@@ -263,7 +259,7 @@ export default class AccordionComponent extends Component {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="10">
-              <h4 onClick={this.business1}>Business</h4>
+              <h4>Business</h4>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="10">
               <Card.Body>
@@ -273,7 +269,7 @@ export default class AccordionComponent extends Component {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="11">
-              <h4 onClick={this.geography1}>Geography</h4>
+              <h4>Geography</h4>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="11">
               <Card.Body>
@@ -283,7 +279,7 @@ export default class AccordionComponent extends Component {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="12">
-              <h4 onClick={this.population1}>Comments</h4>
+              <h4>Comments</h4>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="12">
               <Card.Body>{commentsList}</Card.Body>
@@ -291,7 +287,7 @@ export default class AccordionComponent extends Component {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="13">
-              <h4 onClick={this.population1}>Leave A Review</h4>
+              <h4>Leave A Review</h4>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="13">
               <Card.Body>
