@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Accordion from "../Accordion/Accordion";
 import axios from "axios";
+// imported in App.js
 
 export default class List extends Component {
   componentDidMount() {
@@ -9,7 +10,6 @@ export default class List extends Component {
     axios
       .get(URL)
       .then(res => {
-        // console.log(res.data);
         this.props.setName(res.data);
       })
       .catch(err => {
@@ -19,7 +19,7 @@ export default class List extends Component {
 
   render() {
     const city = this.props.cityName;
-
+    // Delay render until after componentDidMount
     if (city === null) {
       return null;
     }
