@@ -25,13 +25,13 @@ export default class AccordionComponent extends Component {
       return (
         <div className="comments">
           <div>
-            <strong>name:</strong> {object.name}
+            <strong>Name:</strong> {object.name}
             <Link className="commentEdit" to={url}>
               edit
             </Link>
           </div>
           <div>
-            <strong>comment:</strong> {object.comment}
+            <strong>Review:</strong> {object.comment}
           </div>
         </div>
       );
@@ -279,7 +279,7 @@ export default class AccordionComponent extends Component {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="12">
-              <h4>Comments</h4>
+              <h4>Reviews</h4>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="12">
               <Card.Body>{commentsList}</Card.Body>
