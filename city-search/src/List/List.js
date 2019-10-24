@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Search from "../Search/Search";
 import axios from "axios";
+// imported in App.js
 
 export default class List extends Component {
   constructor() {
@@ -17,11 +18,9 @@ export default class List extends Component {
     axios
       .get("https://city-fyndr.herokuapp.com/")
       .then(res => {
-        console.log(res);
         this.setState({ ListOfCities: res.data });
       })
       .catch(err => {
-        console.error(err);
       });
   }
 
@@ -29,22 +28,20 @@ export default class List extends Component {
     this.setState({ filter: e.target.value.substr(0, 20) });
   }
 
-  // sort list by state alphabetically
-  // sort cities within state alphabetically
-  // sort cities into array by state
-  // print array for each state
-
   render() {
+    // Filter city list based on user input in search bar
     let filtered = this.state.ListOfCities.filter(city => {
       return city.city.indexOf(this.state.filter) !== -1;
     });
 
+    // Map through cities and display list sorted by rank
     let list = filtered.map(city => {
       return (
         <div key={city.bestPlacesData.rank}>
           <p>
-            {/* <h4>{city.state.stateFull}</h4> */}
+            {/* Link to individual city pages */}
             <Link to={`/show/${city.city}`}>
+              {/* List each city's rank, name, and state */}
               {city.bestPlacesData.rank}. {city.city}, {city.state.stateFull}
             </Link>
           </p>

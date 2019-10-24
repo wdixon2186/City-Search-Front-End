@@ -13,7 +13,6 @@ import Show from "../Show/Show";
 import About from "../About/About";
 import Edit from "../Edit/Edit";
 // import Card from "react-bootstrap/Card";
-// import Search from "../Search/Search.js";
 
 class App extends Component {
   constructor(props) {
