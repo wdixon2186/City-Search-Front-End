@@ -25,9 +25,9 @@ Likewise, if the user wanted to know more about the page or the people who buil 
 
 # INSTILLATION
 
-    The site can be accessed [here](https://wdixon2186.github.io/City-Search-Front-End/#/)
+The site can be accessed [here](https://wdixon2186.github.io/City-Search-Front-End/#/)
 
-    Otherwise the user can clone down this repository, making sure they have the react app titled city-search. From there they could make changes, or look at our code, by accessing the src folder.
+Otherwise the user can clone down this repository, making sure they have the react app titled city-search. From there they could make changes, or look at our code, by accessing the src folder.
 
 # THOUGHT PROCESS
 
@@ -58,10 +58,13 @@ If given more time, we would set up the reviews function on our city pages to po
 
 # AUTHORS
 
-[Bonnie Peters](https://wdixon2186.github.io/City-Search-Front-End/#/)
-[Jared Morgan](https://wdixon2186.github.io/City-Search-Front-End/#/)
-[Melaina Valentine](https://github.com/Emme313)
-William Dixon
+- [Bonnie Peters](https://github.com/bonniepeters)
+
+- [Jared Morgan](https://github.com/jaredsmorgan)
+
+- [Melaina Valentine](https://github.com/Emme313)
+
+- William Dixon
 
 # ACKNOWLEDGMENTS
 
