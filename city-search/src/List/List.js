@@ -21,6 +21,7 @@ export default class List extends Component {
         this.setState({ ListOfCities: res.data });
       })
       .catch(err => {
+        console.error(err);
       });
   }
 
