@@ -11,7 +11,7 @@ class About extends Component {
         </p>
         <h3>Where our list came from </h3>
         <p>
-          We pulled the top 50 cities in the United States as ranked by <a href="https://realestate.usnews.com/places/rankings/best-places-to-live" target="_blank" rel="noopener noreferrer">U.S News Real Estate</a> based on <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218" target="_blank" rel="noopener noreferrer">U.S. Census Data</a>.
+          We pulled the top 50 cities in the United States as ranked by <a href="https://realestate.usnews.com/places/rankings/best-places-to-live" target="_blank" rel="noopener noreferrer">U.S. News Real Estate</a> based on <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218" target="_blank" rel="noopener noreferrer">U.S. Census Data</a>.
 
           For further information on the methods used to compile this list, visit U.S. News' <a href="https://realestate.usnews.com/places/methodology" target="_blank" rel="noopener noreferrer">How We Rank the Best Places to Live & Retire page</a>.
         </p>
