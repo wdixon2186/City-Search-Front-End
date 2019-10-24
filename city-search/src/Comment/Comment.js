@@ -46,8 +46,8 @@ export default class List extends Component {
       .put(`https://city-fyndr.herokuapp.com/${this.props.city.city}`, review)
       .then(res => {
         console.log(res.data);
-      })
-      .then(this.setRedirect);
+      });
+    // .then(this.setRedirect);
   }
 
   render() {
