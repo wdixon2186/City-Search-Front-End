@@ -24,7 +24,11 @@ export default class CardComponent extends Component {
           <div>
             <li>
               <strong>{String(key)}:</strong>{" "}
-              <a href={this.props.name[key]} target="_blank">
+              <a
+                href={this.props.name[key]}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {this.props.name[key]}
               </a>
             </li>
