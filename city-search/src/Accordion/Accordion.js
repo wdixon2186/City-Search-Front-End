@@ -1,15 +1,33 @@
 import React, { Component } from "react";
-import { Card, Accordion } from "react-bootstrap";
+import { Card, Accordion, useAccordionToggle } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Comment from "../Comment/Comment";
+import CardComponent from "../Card/Card";
 
 export default class AccordionComponent extends Component {
+  constructor() {
+    super();
+    this.state = {
+      eventKey: 0
+    };
+  }
+
+  onClick(e) {
+    let eventKey = e.target.key;
+    console.log(eventKey);
+
+    // useAccordionToggle(eventKey, () => {
+    //   console.log("custom toggle");
+    // });
+  }
+
   render() {
     let {
       population,
       bestPlacesData,
       ageAndGender,
       raceAndOrigin,
+      veterans,
       housing,
       households,
       education,
@@ -19,119 +37,29 @@ export default class AccordionComponent extends Component {
       reviews
     } = this.props.city;
 
-    let populationList = Object.keys(population).map(key => {
-      return (
-        <div>
-          <li>
-            <strong>{String(key)}:</strong> {population[key]}
-          </li>
-        </div>
-      );
-    });
-
-    let bestPlacesDataList = Object.keys(bestPlacesData).map(key => {
-      let httpCheck = key.includes("https://");
-      if (httpCheck) {
-        return (
-          <div>
-            <li>
-              <strong>{String(key)}:</strong>{" "}
-              <a href={bestPlacesData[key]} target="_blank">
-                {bestPlacesData[key]}
-              </a>
-            </li>
-          </div>
-        );
-      } else {
-        return (
-          <div>
-            <li>
-              <strong>{String(key)}:</strong> {bestPlacesData[key]}
-            </li>
-          </div>
-        );
-      }
-    });
-
-    let ageAndGenderList = Object.keys(ageAndGender).map(key => {
-      return (
-        <div>
-          <li>
-            <strong>{String(key)}:</strong> {ageAndGender[key]}
-          </li>
-        </div>
-      );
-    });
-
-    let raceAndOriginList = Object.keys(raceAndOrigin).map(key => {
-      return (
-        <div>
-          <li>
-            <strong>{String(key)}:</strong> {raceAndOrigin[key]}
-          </li>
-        </div>
-      );
-    });
-
-    let housingList = Object.keys(housing).map(key => {
-      return (
-        <div>
-          <li>
-            <strong>{String(key)}:</strong> {housing[key]}
-          </li>
-        </div>
-      );
-    });
-
-    let householdsList = Object.keys(households).map(key => {
-      return (
-        <div>
-          <li>
-            <strong>{String(key)}:</strong> {households[key]}
-          </li>
-        </div>
-      );
-    });
-
-    let educationList = Object.keys(education).map(key => {
-      return (
-        <div>
-          <li>
-            <strong>{String(key)}:</strong> {education[key]}
-          </li>
-        </div>
-      );
-    });
-
-    let employmentAndHealthList = Object.keys(employmentAndHealth).map(key => {
-      return (
-        <div>
-          <li>
-            <strong>{String(key)}:</strong> {employmentAndHealth[key]}
-          </li>
-        </div>
-      );
-    });
-
-    let businessList = Object.keys(business).map(key => {
-      return (
-        <div>
-          <li>
-            <strong>{String(key)}:</strong> {business[key]}
-          </li>
-        </div>
-      );
-    });
-
-    let geographyList = Object.keys(geography).map(key => {
-      return (
-        <div>
-          <li>
-            <strong>{String(key)}:</strong> {geography[key]}
-          </li>
-        </div>
-      );
-    });
+    // let bestPlacesDataList = Object.keys(bestPlacesData).map(key => {
+    //   let httpCheck = key.includes("https://");
+    //   if (httpCheck === true) {
+    //     return (
+    //       <div>
+    //         <li>
+    //           <strong>{String(key)}:</strong>{" "}
+    //           <a href={bestPlacesData[key]} target="_blank">
+    //             {bestPlacesData[key]}
+    //           </a>
+    //         </li>
+    //       </div>
+    //     );
+    //   } else {
+    //     return (
+    //       <div>
+    //         <li>
+    //           <strong>{String(key)}:</strong> {bestPlacesData[key]}
+    //         </li>
+    //       </div>
+    //     );
+    //   }
+    // });
 
     // comments list based on available data
     let commentsList;
@@ -164,48 +92,14 @@ export default class AccordionComponent extends Component {
     return (
       <div>
         <Accordion defaultActiveKey="0">
-          <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="0">
-              <h4>Population</h4>
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey="0">
-              <Card.Body>
-                <ul>
-                  <li>{populationList}</li>
-                </ul>
-              </Card.Body>
-            </Accordion.Collapse>
-          </Card>
-          <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="1">
-              <h4>Us News' Ranking</h4>
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey="1">
-              <Card.Body>
-                <ul>{bestPlacesDataList}</ul>
-              </Card.Body>
-            </Accordion.Collapse>
-          </Card>
-          <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="3">
-              <h4>Age and Gender</h4>
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey="3">
-              <Card.Body>
-                <ul>{ageAndGenderList}</ul>
-              </Card.Body>
-            </Accordion.Collapse>
-          </Card>
-          <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="4">
-              <h4>Race and Origin</h4>
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey="4">
-              <Card.Body>
-                <ul>{raceAndOriginList}</ul>
-              </Card.Body>
-            </Accordion.Collapse>
-          </Card>
+          <CardComponent name={population} key="0" title="Population" />
+          <CardComponent
+            name={bestPlacesData}
+            key="1"
+            title="Us News' Ranking"
+          />
+          <CardComponent name={ageAndGender} key="2" title="Age and Gender" />
+          <CardComponent name={raceAndOrigin} key="3" title="Race and Origin" />
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="5">
               <h4>Veterans</h4>
@@ -220,79 +114,29 @@ export default class AccordionComponent extends Component {
               </Card.Body>
             </Accordion.Collapse>
           </Card>
-          <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="6">
-              <h4>Housing</h4>
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey="6">
-              <Card.Body>
-                <ul>{housingList}</ul>
-              </Card.Body>
-            </Accordion.Collapse>
-          </Card>
-          <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="7">
-              <h4>Households</h4>
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey="7">
-              <Card.Body>
-                <ul>{householdsList}</ul>
-              </Card.Body>
-            </Accordion.Collapse>
-          </Card>
-          <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="8">
-              <h4>Education</h4>
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey="8">
-              <Card.Body>
-                <ul>{educationList}</ul>
-              </Card.Body>
-            </Accordion.Collapse>
-          </Card>
-          <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="9">
-              <h4>Employment and Health</h4>
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey="9">
-              <Card.Body>
-                <ul>{employmentAndHealthList}</ul>
-              </Card.Body>
-            </Accordion.Collapse>
-          </Card>
-          <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="10">
-              <h4>Business</h4>
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey="10">
-              <Card.Body>
-                <ul>{businessList}</ul>
-              </Card.Body>
-            </Accordion.Collapse>
-          </Card>
+          <CardComponent name={housing} key="5" title="Housing" />
+          <CardComponent name={households} key="6" title="Households" />
+          <CardComponent name={education} key="7" title="Education" />
+          <CardComponent
+            name={employmentAndHealth}
+            key="8"
+            title="Employment and Health"
+          />
+          <CardComponent name={business} key="9" title="Business" />
+          <CardComponent name={geography} key="10" title="Geography" />
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="11">
-              <h4>Geography</h4>
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey="11">
-              <Card.Body>
-                <ul>{geographyList}</ul>
-              </Card.Body>
-            </Accordion.Collapse>
-          </Card>
-          <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="12">
               <h4>Reviews</h4>
             </Accordion.Toggle>
-            <Accordion.Collapse eventKey="12">
+            <Accordion.Collapse eventKey="11">
               <Card.Body>{commentsList}</Card.Body>
             </Accordion.Collapse>
           </Card>
           <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="13">
+            <Accordion.Toggle as={Card.Header} eventKey="12">
               <h4>Leave A Review</h4>
             </Accordion.Toggle>
-            <Accordion.Collapse eventKey="13">
+            <Accordion.Collapse eventKey="12">
               <Card.Body>
                 <Comment city={this.props.city} />
               </Card.Body>
