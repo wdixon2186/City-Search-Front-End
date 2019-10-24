@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Comment from "../Comment/Comment";
 
 export default class AccordionComponent extends Component {
-    render() {
+  render() {
     let population = this.props.city.population;
     let state = this.props.city.state;
     let bestPlacesData = this.props.city.bestPlacesData;

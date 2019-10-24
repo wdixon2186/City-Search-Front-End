@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Form, Button } from "react-bootstrap";
-import { Redirect } from "react-router-dom";
+// import { Redirect } from "react-router-dom";
 import axios from "axios";
 
 export default class List extends Component {
@@ -11,7 +11,7 @@ export default class List extends Component {
     this.onChangeComment = this.onChangeComment.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     // this.setRedirect = this.setRedirect.bind(this);
-    // this.renderRedirect = this.renderRedirect.bind(this);
+    this.renderRedirect = this.renderRedirect.bind(this);
   }
 
   // setRedirect = () => {
@@ -19,12 +19,13 @@ export default class List extends Component {
   //     redirect: true
   //   });
   // };
-  // renderRedirect = () => {
-  //   let url = `/show/${this.props.match.params.city}`;
-  //   if (this.state.redirect) {
-  //     window.location.reload(false);
-  //   }
-  // };
+  renderRedirect = () => {
+    // let url = `/show/${this.props.match.params.city}`;
+    // if (this.state.redirect) {
+    //   window.location.reload(false);
+    // }
+    window.location.reload(false);
+  };
   onChangeName(e) {
     this.setState({ name: e.target.value });
     console.log(this.state.name);
@@ -46,8 +47,8 @@ export default class List extends Component {
       .put(`https://city-fyndr.herokuapp.com/${this.props.city.city}`, review)
       .then(res => {
         console.log(res.data);
-      });
-    // .then(this.setRedirect);
+      })
+      .then(this.renderRedirect);
   }
 
   render() {
