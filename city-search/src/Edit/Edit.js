@@ -12,6 +12,7 @@ export default class Edit extends Component {
     this.onChangeComment = this.onChangeComment.bind(this);
     this.setRedirect = this.setRedirect.bind(this);
     this.renderRedirect = this.renderRedirect.bind(this);
+    this.handleDelete = this.handleDelete.bind(this);
   }
 
   componentDidMount(e) {
@@ -63,36 +64,52 @@ export default class Edit extends Component {
       .then(this.setRedirect);
   }
 
+  handleDelete(e) {
+    e.preventDefault();
+    axios
+      .put(
+        `https://city-fyndr.herokuapp.com/delete/${this.props.match.params.city}/${this.props.match.params.reviews_id}`
+      )
+      .then(console.log("Deleted"))
+      .then(this.setRedirect)
+      .catch(err => console.log(err));
+  }
+
   render() {
     return (
-      <div className="reviewForm">
+      <div>
         {this.renderRedirect()}
-        <Form onSubmit={this.handleSubmit}>
-          <Form.Group md="4">
-            <Form.Label>Name</Form.Label>
-            <Form.Control
-              type="text"
-              action="/:city"
-              method="put"
-              placeholder="optional"
-              name="name"
-              value={this.state.name}
-              onChange={this.onChangeName}
-            />
-          </Form.Group>
-          <Form.Group md="4">
-            <Form.Label for="comment">Comment</Form.Label>
-            <Form.Control
-              as="textarea"
-              rpws="4"
-              placeholder="Enter comment"
-              name="comment"
-              value={this.state.comment}
-              onChange={this.onChangeComment}
-            />
-          </Form.Group>
-          <Button type="submit">Submit</Button>
-        </Form>
+        <div className="reviewForm">
+          <Form onSubmit={this.handleSubmit}>
+            <Form.Group md="4">
+              <Form.Label>Name</Form.Label>
+              <Form.Control
+                type="text"
+                action="/:city"
+                method="put"
+                placeholder="optional"
+                name="name"
+                value={this.state.name}
+                onChange={this.onChangeName}
+              />
+            </Form.Group>
+            <Form.Group md="4">
+              <Form.Label for="comment">Comment</Form.Label>
+              <Form.Control
+                as="textarea"
+                rpws="4"
+                placeholder="Enter comment"
+                name="comment"
+                value={this.state.comment}
+                onChange={this.onChangeComment}
+              />
+            </Form.Group>
+            <Button type="submit">Submit</Button>
+          </Form>
+        </div>
+        <div>
+          <Button onClick={this.handleDelete}>Delete</Button>
+        </div>
       </div>
     );
   }
