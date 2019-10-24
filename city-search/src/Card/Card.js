@@ -22,10 +22,10 @@ export default class CardComponent extends Component {
 
     return (
       <Card>
-        <Accordion.Toggle as={Card.Header} eventKey={this.props.key}>
+        <Accordion.Toggle as={Card.Header} eventKey={this.props.keyProp}>
           <h4>{this.state.title}</h4>
         </Accordion.Toggle>
-        <Accordion.Collapse eventKey={this.props.key}>
+        <Accordion.Collapse eventKey={this.props.keyProp}>
           <Card.Body>
             <ul>
               <li>{list}</li>

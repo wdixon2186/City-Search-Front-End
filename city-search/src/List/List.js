@@ -32,7 +32,13 @@ export default class List extends Component {
   render() {
     // Filter city list based on user input in search bar
     let filtered = this.state.ListOfCities.filter(city => {
-      return city.city.indexOf(this.state.filter) !== -1;
+      return (
+        city.city.toLowerCase().indexOf(this.state.filter.toLowerCase()) !==
+          -1 ||
+        city.state.stateFull
+          .toLowerCase()
+          .indexOf(this.state.filter.toLowerCase()) !== -1
+      );
     });
 
     // Map through cities and display list sorted by rank

@@ -5,22 +5,6 @@ import Comment from "../Comment/Comment";
 import CardComponent from "../Card/Card";
 
 export default class AccordionComponent extends Component {
-  constructor() {
-    super();
-    this.state = {
-      eventKey: 0
-    };
-  }
-
-  onClick(e) {
-    let eventKey = e.target.key;
-    console.log(eventKey);
-
-    // useAccordionToggle(eventKey, () => {
-    //   console.log("custom toggle");
-    // });
-  }
-
   render() {
     let {
       population,
@@ -92,19 +76,27 @@ export default class AccordionComponent extends Component {
     return (
       <div>
         <Accordion defaultActiveKey="0">
-          <CardComponent name={population} key="0" title="Population" />
+          <CardComponent name={population} keyProp="0" title="Population" />
           <CardComponent
             name={bestPlacesData}
-            key="1"
+            keyProp="1"
             title="Us News' Ranking"
           />
-          <CardComponent name={ageAndGender} key="2" title="Age and Gender" />
-          <CardComponent name={raceAndOrigin} key="3" title="Race and Origin" />
+          <CardComponent
+            name={ageAndGender}
+            keyProp="2"
+            title="Age and Gender"
+          />
+          <CardComponent
+            name={raceAndOrigin}
+            keyProp="3"
+            title="Race and Origin"
+          />
           <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="5">
+            <Accordion.Toggle as={Card.Header} eventKey="4">
               <h4>Veterans</h4>
             </Accordion.Toggle>
-            <Accordion.Collapse eventKey="5">
+            <Accordion.Collapse eventKey="4">
               <Card.Body>
                 <ul>
                   <li>
@@ -114,16 +106,16 @@ export default class AccordionComponent extends Component {
               </Card.Body>
             </Accordion.Collapse>
           </Card>
-          <CardComponent name={housing} key="5" title="Housing" />
-          <CardComponent name={households} key="6" title="Households" />
-          <CardComponent name={education} key="7" title="Education" />
+          <CardComponent name={housing} keyProp="5" title="Housing" />
+          <CardComponent name={households} keyProp="6" title="Households" />
+          <CardComponent name={education} keyProp="7" title="Education" />
           <CardComponent
             name={employmentAndHealth}
-            key="8"
+            keyProp="8"
             title="Employment and Health"
           />
-          <CardComponent name={business} key="9" title="Business" />
-          <CardComponent name={geography} key="10" title="Geography" />
+          <CardComponent name={business} keyProp="9" title="Business" />
+          <CardComponent name={geography} keyProp="10" title="Geography" />
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="11">
               <h4>Reviews</h4>
