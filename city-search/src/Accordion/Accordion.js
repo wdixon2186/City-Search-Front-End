@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import Card from "react-bootstrap/Card";
-import Accordion from "react-bootstrap/Accordion";
+import { Card, Accordion } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Comment from "../Comment/Comment";
 
@@ -19,24 +18,6 @@ export default class AccordionComponent extends Component {
       geography,
       reviews
     } = this.props.city;
-
-    let commentsList = reviews.map(object => {
-      let url = `/city/${this.props.city.city}/edit/review/${object._id}`;
-
-      return (
-        <div className="comments">
-          <div>
-            <strong>Name:</strong> {object.name}
-            <Link className="commentEdit" to={url}>
-              edit
-            </Link>
-          </div>
-          <div>
-            <strong>Review:</strong> {object.comment}
-          </div>
-        </div>
-      );
-    });
 
     let populationList = Object.keys(population).map(key => {
       return (
@@ -151,7 +132,34 @@ export default class AccordionComponent extends Component {
         </div>
       );
     });
-    console.log(commentsList);
+
+    // comments list based on available data
+    let commentsList;
+    if (reviews.length > 0) {
+      commentsList = reviews.map(object => {
+        let url = `/city/${this.props.city.city}/edit/review/${object._id}`;
+
+        return (
+          <div className="comments" key={object._id}>
+            <div>
+              <strong>Name:</strong> {object.name}
+              <Link className="commentEdit" to={url}>
+                edit
+              </Link>
+            </div>
+            <div>
+              <strong>Review:</strong> {object.comment}
+            </div>
+          </div>
+        );
+      });
+    } else {
+      commentsList = (
+        <div>
+          <em>No reviews yet. Leave one in the section below.</em>
+        </div>
+      );
+    }
 
     return (
       <div>

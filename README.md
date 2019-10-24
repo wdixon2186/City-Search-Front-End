@@ -31,8 +31,12 @@ Otherwise the user can clone down this repository, making sure they have the rea
 
 # THOUGHT PROCESS
 
+<<<<<<< HEAD
+- On React.
+=======
 ## On React
 
+>>>>>>> 8ef94da03ccc67decd951f6cca462c2de8a96cc2
   We approached React with a divide and conquer mentality.
   The entire project began with the front end and back end sitting down and creating wire-frames for what we wanted the site to look like, and what functionality it would have.
   ![WireFrame](https://i.imgur.com/oSHGX0A.jpg)
@@ -43,7 +47,11 @@ Otherwise the user can clone down this repository, making sure they have the rea
 
   Once the backend was deployed, we installed axios to access it, and removed our sample data.
 
+<<<<<<< HEAD
+* On Express.
+=======
 ## On Express
+>>>>>>> 8ef94da03ccc67decd951f6cca462c2de8a96cc2
   ![Model](https://i.imgur.com/5gGHaA9.jpg)
 
 # UNRESOLVED PROBLEMS
@@ -65,9 +73,16 @@ If given more time, we would set up the reviews function on our city pages to po
 
 - [Melaina Valentine](https://github.com/Emme313)
 
+<<<<<<< HEAD
+- William Dixon
+=======
 - [William Dixon](https://github.com/wdixon2186)
+>>>>>>> 8ef94da03ccc67decd951f6cca462c2de8a96cc2
 
 # ACKNOWLEDGMENTS
 
 - Ali Spittel
+<<<<<<< HEAD
+=======
 
+>>>>>>> 8ef94da03ccc67decd951f6cca462c2de8a96cc2
