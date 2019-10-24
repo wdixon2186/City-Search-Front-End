@@ -1,45 +1,60 @@
 # CITY FYNDR
 
-An app that allows potential movers to find relevant data about the top 50 cities in the United States.
-![CoverPhoto](https://i.imgur.com/KKQBe33.jpg)
+City Fyndr is a browser-based MERN (MongoDB, Express.js,
+React.js, Node.js) application with full CRUD capability. It allows users to explore relevant data about the top 50 cities to live in the United States.
 
-# HOW IT WORKS
+<img src="https://i.imgur.com/tQhjJTc.png" alt="Cover Photo"
+	title="Cover Photo" width="65%"/>
 
-The app opens on a list of US News' top 50 cities, allowing the user to scroll through the options, or if they have a place in mind, the user can use a search bar at the top.
+## FEATURE LIST
 
-![FrontPage](https://i.imgur.com/wTfrJbF.png)
+**Header**
+* Displays on all pages and links to Main
 
-Once the user finds a city they want more information on, the user can click on the name of the city to access an information page.
+**Footer**
+* Displays on all pages and links to About and contributors' github pages
 
-In the information page the user is given a list of Accordion buttons that are labeled with broad data topics. If the user wants to learn more information on the topic they can click on the button to expand the accordion and see the data.
+**Main Page**
+* List of 50 cities in order of rank
+* Search bar that filters based on city or state name
+* Cities listed as links to view more details
 
-![CityPage](https://i.imgur.com/bhxM0Qw.png)
+**Individual City Page**  
+<img src="https://i.imgur.com/79ZwrE5.png" alt="City View Page"
+	title="City View Page" width="65%"/>
+* Data for selected city is organized into sections
+* Sections are accordion buttons to hide and show selected data
+* Reviews accordion shows user submitted reviews
+* Each review has an edit link
+* "Leave a Review" accordion displays a form where users can submit new reviews  
+* Reviews can be left anonymously or with a specified name  
 
-There is also a place for the user to leave a review, as well as an option for the user to edit a previous review, located in an accordion button at the bottom of the page.
+<img src="https://i.imgur.com/DprMwJH.png" alt="City Fyndr review page"
+	title="Review Page" width="65%"/>
 
-![CommentPage](https://i.imgur.com/yu4aSsu.png)
+## INSTALLATION
 
-If the user ever wants to return to the original list, all they have to do is click on the,'City Fyndr' icon located at the top of the page.
+City Fyndr can be accessed in any browser <a href="https://wdixon2186.github.io/City-Search-Front-End/#/" target="_blank">here</a>.
+You may also choose to copy this code and make edits of your own. To do so, follow the steps in <a href="https://help.github.com/en/articles/fork-a-repo" target="_blank">this article</a>.
+  
+Additionally, you will need to install all this app's dependencies by running `npm install` from the `city-search` folder.
 
-Likewise, if the user wanted to know more about the page or the people who buil it, they could click on the about button or any of the names at the bottom of the page.
+Once these are each successfully installed, you may then access the app through your localhost by running `npm start` in your terminal.  
 
-# INSTILLATION
+## THOUGHT PROCESS
 
-The site can be accessed [here](https://wdixon2186.github.io/City-Search-Front-End/#/)
+### User Story
 
-Otherwise the user can clone down this repository, making sure they have the react app titled city-search. From there they could make changes, or look at our code, by accessing the src folder.
+ <img src="https://i.imgur.com/eh3hnE0.jpg" alt="City Fyndr app user story"
+	title="User Story" width="65%"/>
 
-# THOUGHT PROCESS
+### Front-End (ReactJS)
 
-<<<<<<< HEAD
-- On React.
-=======
-## On React
-
->>>>>>> 8ef94da03ccc67decd951f6cca462c2de8a96cc2
   We approached React with a divide and conquer mentality.
-  The entire project began with the front end and back end sitting down and creating wire-frames for what we wanted the site to look like, and what functionality it would have.
-  ![WireFrame](https://i.imgur.com/oSHGX0A.jpg)
+  The entire project began with the front end and back end sitting down and creating wireframes for what we wanted the site to look like, and what functionality it would have.  
+  
+  <img src="https://i.imgur.com/oSHGX0A.jpg" alt="Wireframe for City Fyndr App"
+	title="Wireframe" width="65%"/>
 
   From there, we defined each component that would be needed, and then built them out in their own category.
 
@@ -47,42 +62,36 @@ Otherwise the user can clone down this repository, making sure they have the rea
 
   Once the backend was deployed, we installed axios to access it, and removed our sample data.
 
-<<<<<<< HEAD
-* On Express.
-=======
-## On Express
->>>>>>> 8ef94da03ccc67decd951f6cca462c2de8a96cc2
-  ![Model](https://i.imgur.com/5gGHaA9.jpg)
+### Back-End (Express and MongoDB)
 
-# UNRESOLVED PROBLEMS
+  For the back-end, we first exported Census data for the top 50 cities ranked by U.S. News' and built an API. Next, we set up all necessary routes for full CRUD functionality (included in picture below).
+  
+<img src="https://i.imgur.com/Lrdj8Vr.jpg" alt="Client/Server model for City Fyndr App"
+	title="Client/Server Model" width="80%"/>
 
-If given more time, we would set up the reviews function on our city pages to post the reviews without the need to reload the page.
+## UNRESOLVED PROBLEMS
 
-# BUILT WITH
+  * Allow page to update with newly added review without reloading page.
+  * Adjust each data point to have a helpful title as opposed to the current camel case titles
+
+## BUILT WITH
 
     - React.js
     - Bootstrap
     - Node.Js
     - Express
 
-# AUTHORS
+## AUTHORS
 
-- [Bonnie Peters](https://github.com/bonniepeters)
+- <a href="https://github.com/bonniepeters" target="_blank">Bonnie Peters</a>
 
-- [Jared Morgan](https://github.com/jaredsmorgan)
+- <a href="https://github.com/jaredsmorgan" target="_blank">Jared Morgan</a>
 
-- [Melaina Valentine](https://github.com/Emme313)
+- <a href="https://github.com/Emme313" target="_blank">Melaina Valentine</a>
 
-<<<<<<< HEAD
-- William Dixon
-=======
-- [William Dixon](https://github.com/wdixon2186)
->>>>>>> 8ef94da03ccc67decd951f6cca462c2de8a96cc2
+- <a href="https://github.com/wdixon2186" target="_blank">William Dixon</a>
 
-# ACKNOWLEDGMENTS
+## ACKNOWLEDGMENTS
 
-- Ali Spittel
-<<<<<<< HEAD
-=======
+We would like to thank and acknowledge our instructor <a href="https://www.alispit.tel/" target="_blank">Ali Spittel</a> for her help in building this full-stack application.
 
->>>>>>> 8ef94da03ccc67decd951f6cca462c2de8a96cc2
