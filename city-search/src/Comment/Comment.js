@@ -27,13 +27,13 @@ export default class List extends Component {
         comment: this.state.comment
       }
     };
-    console.log(review);
+    // console.log(review);
     axios
       .put(`https://city-fyndr.herokuapp.com/${this.props.city.city}`, review)
       .then(res => {
         console.log(res.data);
       });
-    // this.setState({ name: "", comment: "" });
+    this.setState({ name: "", comment: "" });
   }
 
   render() {

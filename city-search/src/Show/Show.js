@@ -3,13 +3,6 @@ import Accordion from "../Accordion/Accordion";
 import axios from "axios";
 
 export default class List extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     city: this.props.match.params.city,
-  //     apiCity: null
-  //   };
-  // }
   componentDidMount() {
     const showCity = this.props.match.params.city;
     const URL = `https://city-fyndr.herokuapp.com/${showCity}`;
@@ -23,9 +16,10 @@ export default class List extends Component {
         console.error(err);
       });
   }
+
   render() {
     const city = this.props.cityName;
-    // let city = listOfCities.filter(city => city.city === showCity)[0];
+
     if (city === null) {
       return null;
     }

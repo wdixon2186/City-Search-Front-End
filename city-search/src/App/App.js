@@ -33,7 +33,18 @@ class App extends Component {
         <Switch>
           <Route path="/" exact={true} component={List} />
           <Route path="/about" component={About} />
-          <Route path="/city/:city/review/:reviews_id" component={Edit} />
+          <Route
+            exact
+            path="/city/:city/edit/review/:reviews_id"
+            render={routerProps => (
+              <Edit
+                match={routerProps.match}
+                setName={this.setName}
+                city={this.setState.city}
+                cityName={this.state.city}
+              />
+            )}
+          />
           <Route
             path="/show/:city"
             render={routerProps => (

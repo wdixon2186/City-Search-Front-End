@@ -24,11 +24,13 @@ export default class AccordionComponent extends Component {
     let reviews = this.props.city.reviews;
 
     let commentsList = reviews.map(object => {
+      let url = `/city/${this.props.city.city}/edit/review/${object._id}`;
+
       return (
         <div className="comments">
           <div>
             <strong>name:</strong> {object.name}
-            <Link className="commentEdit" to="/city/:city/review/:reviews_id">
+            <Link className="commentEdit" to={url}>
               edit
             </Link>
           </div>
@@ -293,12 +295,11 @@ export default class AccordionComponent extends Component {
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="13">
               <Card.Body>
-                <Comment city={this.props.city}/>
+                <Comment city={this.props.city} />
               </Card.Body>
             </Accordion.Collapse>
           </Card>
         </Accordion>
-        
       </div>
     );
   }
