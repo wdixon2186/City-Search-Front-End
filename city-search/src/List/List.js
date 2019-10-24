@@ -12,6 +12,7 @@ export default class List extends Component {
     };
     this.filterByCityState = this.filterByCityState.bind(this);
   }
+
   componentDidMount() {
     axios
       .get("https://city-fyndr.herokuapp.com/")
@@ -56,7 +57,7 @@ export default class List extends Component {
         <div>
           <Search filter={this.filterByCityState} value={this.state.filter} />
         </div>
-        <div>{list}</div>
+        <div className="listView">{list}</div>
       </div>
     );
   }

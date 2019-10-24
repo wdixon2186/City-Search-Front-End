@@ -6,18 +6,19 @@ import Comment from "../Comment/Comment";
 
 export default class AccordionComponent extends Component {
   render() {
-    let population = this.props.city.population;
-    let state = this.props.city.state;
-    let bestPlacesData = this.props.city.bestPlacesData;
-    let ageAndGender = this.props.city.ageAndGender;
-    let raceAndOrigin = this.props.city.raceAndOrigin;
-    let housing = this.props.city.housing;
-    let households = this.props.city.households;
-    let education = this.props.city.education;
-    let employmentAndHealth = this.props.city.employmentAndHealth;
-    let business = this.props.city.business;
-    let geography = this.props.city.geography;
-    let reviews = this.props.city.reviews;
+    let {
+      population,
+      bestPlacesData,
+      ageAndGender,
+      raceAndOrigin,
+      housing,
+      households,
+      education,
+      employmentAndHealth,
+      business,
+      geography,
+      reviews
+    } = this.props.city;
 
     let commentsList = reviews.map(object => {
       let url = `/city/${this.props.city.city}/edit/review/${object._id}`;
@@ -48,23 +49,27 @@ export default class AccordionComponent extends Component {
     });
 
     let bestPlacesDataList = Object.keys(bestPlacesData).map(key => {
-      return (
-        <div>
-          <li>
-            <strong>{String(key)}:</strong> {bestPlacesData[key]}
-          </li>
-        </div>
-      );
-    });
-
-    let stateList = Object.keys(state).map(key => {
-      return (
-        <div>
-          <li>
-            <strong>{String(key)}:</strong> {state[key]}
-          </li>
-        </div>
-      );
+      let httpCheck = key.includes("https://");
+      if (httpCheck) {
+        return (
+          <div>
+            <li>
+              <strong>{String(key)}:</strong>{" "}
+              <a href={bestPlacesData[key]} target="_blank">
+                {bestPlacesData[key]}
+              </a>
+            </li>
+          </div>
+        );
+      } else {
+        return (
+          <div>
+            <li>
+              <strong>{String(key)}:</strong> {bestPlacesData[key]}
+            </li>
+          </div>
+        );
+      }
     });
 
     let ageAndGenderList = Object.keys(ageAndGender).map(key => {
@@ -165,21 +170,11 @@ export default class AccordionComponent extends Component {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="1">
-              <h4>Best Places Data</h4>
+              <h4>Us News' Ranking</h4>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
               <Card.Body>
                 <ul>{bestPlacesDataList}</ul>
-              </Card.Body>
-            </Accordion.Collapse>
-          </Card>
-          <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="2">
-              <h4>State</h4>
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey="2">
-              <Card.Body>
-                <ul>{stateList}</ul>
               </Card.Body>
             </Accordion.Collapse>
           </Card>
@@ -249,7 +244,7 @@ export default class AccordionComponent extends Component {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="9">
-              <h4>Employment And Health</h4>
+              <h4>Employment and Health</h4>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="9">
               <Card.Body>

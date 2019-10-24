@@ -3,39 +3,82 @@ body {
 }
 
 .logo {
-  max-width: 35%;
+  max-width: 55%;
 }
 
 .cityName {
   margin: 20px 0;
   font-weight: 900;
+  font-size: 1.9em;
 }
 
-.reviewForm,
+.reviewForm {
+  margin: 10px;
+}
+
 .searchBar {
-  margin: 20px;
+  margin: 4vh 2vw 8vh;
 }
 
-.nameForm {
-  text-align: right;
+.deleteBtn {
+  float: right;
 }
+
 h3,
 h4 {
   display: inline-block;
 }
+
 .footer {
-  display: flex;
   justify-content: space-between;
-  margin-top: 60px;
+  align-items: baseline;
+  margin-top: 40px;
 }
+
 .comments {
   padding: 2%;
 }
+
 .commentEdit {
   float: right;
 }
+
 .reviewForm {
   background-color: lightgray;
   padding: 2%;
   border-radius: 5px;
+}
+
+.listView {
+  font-size: 1.25em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    max-width: 35%;
+  }
+
+  .cityName {
+    font-size: 2.25em;
+  }
+
+  .footer {
+    display: flex;
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .logo {
+    max-width: 30%;
+  }
+
+  .cityName {
+    font-size: 2.5em;
+  }
 }
