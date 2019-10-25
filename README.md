@@ -47,6 +47,12 @@ Once these are each successfully installed, you may then access the app through 
 
 ## THOUGHT PROCESS
 
+We worked together to create a game plan as outlined in our deck.
+<a href="https://drive.google.com/file/d/1UtXnnO7tGSyEVjjmojrOZ7j-oaO9vRPL/view?usp=sharing" target="_blank">View Deck</a>
+
+In addition to our project planning deck we also worked on discovering the best way to work together with everyone's strengths and weaknesses, as well as desired areas of growth and outcomes.
+<a href="https://docs.google.com/document/d/1icLScqzJZ1bxbCFSLdmZBIA2UNQZvN7DSNFawPUBfS0/edit?usp=sharing">Team Planning & Post-Project Assessment</a>
+
 ### User Story
 
 <img src="https://i.imgur.com/eh3hnE0.jpg" alt="City Fyndr app user story"
