@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
-// import Architecture from "../city-architecture.json";
-// import listOfCities from "../cities-data.json";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -12,7 +10,6 @@ import List from "../List/List";
 import Show from "../Show/Show";
 import About from "../About/About";
 import Edit from "../Edit/Edit";
-// import Card from "react-bootstrap/Card";
 
 class App extends Component {
   constructor(props) {

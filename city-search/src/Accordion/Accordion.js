@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import { Card, Accordion } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Comment from "../Comment/Comment";
 import CardComponent from "../Card/Card";
 
-export default class AccordionComponent extends Component {
+export default class AccordionComponent extends PureComponent {
   render() {
     let {
       population,
@@ -96,16 +96,13 @@ export default class AccordionComponent extends Component {
               <h4>Reviews</h4>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="11">
-              <Card.Body>{commentsList}</Card.Body>
-            </Accordion.Collapse>
-          </Card>
-          <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="12">
-              <h4>Leave A Review</h4>
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey="12">
               <Card.Body>
-                <Comment city={this.props.city} />
+                {commentsList}{" "}
+                <Comment
+                  city={this.props.city}
+                  setRedirect={this.props.setRedirect}
+                  renderRedirect={this.props.renderRedirect}
+                />
               </Card.Body>
             </Accordion.Collapse>
           </Card>

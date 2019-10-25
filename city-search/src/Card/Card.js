@@ -17,11 +17,12 @@ export default class CardComponent extends Component {
   }
 
   render() {
-    let list = Object.keys(this.props.name).map(key => {
+    let list = Object.keys(this.props.name).map((key, index) => {
+      // console.log(index);
       let value = this.props.name[key];
       if (this.isUrl(value)) {
         return (
-          <div>
+          <div key={index}>
             <li>
               <strong>{String(key)}:</strong>{" "}
               <a
@@ -36,7 +37,7 @@ export default class CardComponent extends Component {
         );
       } else {
         return (
-          <div>
+          <div key={index}>
             <li>
               <strong>{String(key)}:</strong> {this.props.name[key]}
             </li>
@@ -52,9 +53,7 @@ export default class CardComponent extends Component {
         </Accordion.Toggle>
         <Accordion.Collapse eventKey={this.props.keyProp}>
           <Card.Body>
-            <ul>
-              <li>{list}</li>
-            </ul>
+            <ul>{list}</ul>
           </Card.Body>
         </Accordion.Collapse>
       </Card>

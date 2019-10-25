@@ -1,39 +1,24 @@
 import React, { Component } from "react";
 import { Form, Button } from "react-bootstrap";
-// import { Redirect } from "react-router-dom";
 import axios from "axios";
 
-export default class List extends Component {
+export default class Review extends Component {
   constructor(props) {
     super(props);
-    this.state = { name: "anonymous", comment: "", redirect: false };
+    this.state = { name: "anonymous", comment: "" };
     this.onChangeName = this.onChangeName.bind(this);
     this.onChangeComment = this.onChangeComment.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    // this.setRedirect = this.setRedirect.bind(this);
-    this.renderRedirect = this.renderRedirect.bind(this);
   }
 
-  // setRedirect = () => {
-  //   this.setState({
-  //     redirect: true
-  //   });
-  // };
-  renderRedirect = () => {
-    // let url = `/show/${this.props.match.params.city}`;
-    // if (this.state.redirect) {
-    //   window.location.reload(false);
-    // }
-    window.location.reload(false);
-  };
   onChangeName(e) {
     this.setState({ name: e.target.value });
-    console.log(this.state.name);
   }
+
   onChangeComment(e) {
     this.setState({ comment: e.target.value });
-    console.log(this.state.comment);
   }
+
   handleSubmit(e) {
     e.preventDefault();
     let review = {
@@ -48,7 +33,14 @@ export default class List extends Component {
       .then(res => {
         console.log(res.data);
       })
-      .then(this.renderRedirect);
+      .then(this.props.setRedirect)
+      .then(
+        this.setState({
+          name: "anonymous",
+          comment: ""
+        })
+      )
+      .catch(err => console.log(err));
   }
 
   render() {
@@ -63,16 +55,18 @@ export default class List extends Component {
               method="put"
               placeholder="optional"
               name="name"
+              value={this.state.name}
               onChange={this.onChangeName}
             />
           </Form.Group>
           <Form.Group md="4">
-            <Form.Label for="comment">Review</Form.Label>
+            <Form.Label>Review</Form.Label>
             <Form.Control
               as="textarea"
-              rpws="4"
+              rows="4"
               placeholder="Enter comment"
               name="comment"
+              value={this.state.comment}
               onChange={this.onChangeComment}
             />
           </Form.Group>

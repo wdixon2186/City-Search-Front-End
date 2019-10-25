@@ -96,7 +96,7 @@ export default class Edit extends Component {
             />
           </Form.Group>
           <Form.Group md="4">
-            <Form.Label for="comment">Review</Form.Label>
+            <Form.Label>Review</Form.Label>
             <Form.Control
               as="textarea"
               rpws="4"
