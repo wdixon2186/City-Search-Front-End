@@ -74,7 +74,7 @@ Once the backend was deployed, we installed axios to access it, and removed our 
 
 ### Back-End (Express and MongoDB)
 
-For the back-end, we first exported Census data for the top 50 cities ranked by U.S. News' and built an API. Next, we set up all necessary routes for full CRUD functionality (included in picture below).
+For the back-end, we first exported Census data for the top 50 cities ranked by U.S. News' and built an API. Next, we set up all necessary routes for full CRUD functionality (included in picture below). Our back-end repository can be seen [here](https://github.com/Emme313/p3-city-search-project-backend)
 
 <img src="https://i.imgur.com/Lrdj8Vr.jpg" alt="Client/Server model for City Fyndr App"
 	title="Client/Server Model" width="80%"/>
