@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import Search from "../Search/Search";
-import axios from "axios";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import Search from '../Search/Search';
+import axios from 'axios';
 
 // imported in App.js
 export default class List extends Component {
@@ -9,14 +9,14 @@ export default class List extends Component {
     super();
     this.state = {
       ListOfCities: [],
-      filter: ""
+      filter: ''
     };
     this.filterByCityState = this.filterByCityState.bind(this);
   }
 
   componentDidMount() {
     axios
-      .get("https://city-fyndr.herokuapp.com/")
+      .get('https://city-fyndr.herokuapp.com/')
       .then(res => {
         this.setState({ ListOfCities: res.data });
       })
@@ -30,8 +30,14 @@ export default class List extends Component {
   }
 
   render() {
+    if (this.state.ListOfCities === null) {
+      return null;
+    }
+
     // Filter city list based on user input in search bar
-    let filtered = this.state.ListOfCities.filter(city => {
+    let filtered = this.state.ListOfCities.sort((a, b) => {
+      return a.bestPlacesData.rank - b.bestPlacesData.rank;
+    }).filter(city => {
       return (
         city.city.toLowerCase().indexOf(this.state.filter.toLowerCase()) !==
           -1 ||
@@ -61,7 +67,7 @@ export default class List extends Component {
         <div>
           <Search filter={this.filterByCityState} value={this.state.filter} />
         </div>
-        <div className="listView">{list}</div>
+        <div className='listView'>{list}</div>
       </div>
     );
   }
