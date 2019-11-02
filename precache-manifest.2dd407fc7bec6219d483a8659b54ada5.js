@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8d1fa7e4cc11ece580d63d6c882ab0db",
+    "revision": "e0f522e1362667736ac4be2e875923b1",
     "url": "/City-Search-Front-End/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/City-Search-Front-End/static/css/2.0624914a.chunk.css"
   },
   {
-    "revision": "221eba140a734d9c084d",
+    "revision": "f62e3e62e23d36d811e3",
     "url": "/City-Search-Front-End/static/css/main.233a25ce.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/City-Search-Front-End/static/js/2.ca404da5.chunk.js"
   },
   {
-    "revision": "221eba140a734d9c084d",
-    "url": "/City-Search-Front-End/static/js/main.c5361c3c.chunk.js"
+    "revision": "f62e3e62e23d36d811e3",
+    "url": "/City-Search-Front-End/static/js/main.2a901779.chunk.js"
   },
   {
     "revision": "58bd7a3053d8a782ef94",
